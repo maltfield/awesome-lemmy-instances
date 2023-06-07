@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#git config --global user.email 'michael@michaelaltfield.net'!/usr/bin/env python3
 ################################################################################
 # File:    generate_readme.py
 # Version: 0.1
@@ -48,7 +48,7 @@ This repo was created to help users migrate from reddit to lemmy (a federated re
 
 Because lemmy is federated (like email), there are many different websites where you can register your new lemmy account. In general, it doesn't matter too much which server you register with. Just like with email, you can interact with users on other servers (eg hotmail, aol, gmail, etc).
 
-However, each server has their own policies. The table below will help you compare each site to decide where to register your new lemmy account.
+However, each server has their own local policies and configurations (for example, some lemmy instances disable the "downvote" button). The table below will help you compare each site to decide where to register your new lemmy account.
 
 ### Terms
 

@@ -31,7 +31,7 @@ jobs:
         # push new README to GitHub
         git config --global user.name 'maltfield'
         git config --global user.email 'michael@michaelaltfield.net'
-        git add README.md
+        git add -f README.md
         git commit -am "Auto-update"
         git push
 
