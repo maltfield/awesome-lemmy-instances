@@ -10,31 +10,31 @@ However, each server has their own local policies and configurations (for exampl
 ### Terms
 
  * Instance = A lemmy instance is a website that runs the lemmy software
- * Community = Each instance has many communities. in reddit, communities were called subreddits.
+ * Community = Each instance has many communities. In reddit, **communities were called subreddits**.
  * NSFW = Not Safe For Work
 
 ### Legend
 
  * **Adult** "Yes" means there's no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
- * **New Comm** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
- * **Silo** "No" means that you can interact with other lemmy instances. "Yes" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
- * **Downvotes** "Yes" means this instance allows downvotes. "No" means this instance has turned-off downvote functionality.
+ * **Grow** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
+ * **Fed** "Yes" means that you can interact with other lemmy instances. "No" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
+ * **↓otes** "Yes" means this instance allows downvotes. "No" means this instance has turned-off downvote functionality.
  * **Users** The number of users that have been active on this instance this month.
 
-| Instance | Adult | New Comm | Silo | Downvote | Users | 
+| Instance | Adult | Grow | Fed | ↓vote | Users | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
-| [Lemmy](https://lemmy.ml) | No | No | No | Yes | 1510 |
-| [Beehaw](https://beehaw.org) | Yes | Yes | No | No | 969 |
-| [Lemmygrad](https://lemmygrad.ml) | No | No | No | Yes | 306 |
-| [Feddit](https://feddit.de) | Yes | No | No | Yes | 303 |
+| [Beehaw](https://beehaw.org) | Yes | Yes | Yes | No | 980 |
+| [Lemmygrad](https://lemmygrad.ml) | No | No | Yes | Yes | 307 |
+| [Feddit](https://feddit.de) | Yes | No | Yes | Yes | 307 |
+| [Baraza](https://baraza.africa) | Yes | No | <span style="background-color: red; color: white;">No</span> | Yes | 1 |
 
-# What's next?"
+# What's next?
 
 ## Subscribe to ~~Subreddits~~ Communities
 
 After you pick an instance and register an account, you'll want to subscribe to communities. You can subscribe to "local" communities on your instance, and (if you chose an instance that isn't siloed) you can also subscribe to "remote" communities on other instances.
 
-To find popular communities across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/) run by feddit.de.
+To **find popular communities** across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/) run by feddit.de.
 
  * https://browse.feddit.de/
 
