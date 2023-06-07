@@ -42,13 +42,6 @@ LEMMY_STATS_CRAWLER_FILEPATH = 'lemmy-stats-crawler/' + LEMMY_STATS_CRAWLER_FILE
 #####################
 
 readme_contents = '''
-<style>
-red {
-	background-color: red;
-	color: white;
-}
-</style>
-
 # Awesome Lemmy Instances
 
 This repo was created to help users migrate from reddit to lemmy (a federated reddit alternative).
@@ -126,7 +119,7 @@ for instance in data['instance_details']:
 		new_comm = "No"
 
 	if federation_enabled == False or federated_allowed != None:
-		silo = "<red>Yes</red>"
+		silo = '<span style="background-color: red; color: white;">Yes</span>'
 	else:
 		silo = "No"
 
