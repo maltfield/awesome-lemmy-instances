@@ -23,11 +23,11 @@ However, each server has their own local policies and configurations (for exampl
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
 | Instance | NU | NC | Fed | Adult | ↓vote | Users | 
-| :---: | :---: | :---: | :---: | :---: | :---: | 
-| [Lemmy](https://lemmy.ml) | Yes | No | Yes | No | Yes | 1533 |
-| [Beehaw](https://beehaw.org) | Yes | Yes | Yes | Yes | No | 991 |
-| [Feddit](https://feddit.de) | Yes | No | Yes | Yes | Yes | 310 |
-| [Lemmygrad](https://lemmygrad.ml) | Yes | No | Yes | No | Yes | 307 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
+| [Lemmy](https://lemmy.ml) | Yes | No | Yes | No | Yes | 1538 |
+| [Beehaw](https://beehaw.org) | Yes | Yes | Yes | Yes | No | 1000 |
+| [Feddit](https://feddit.de) | Yes | No | Yes | Yes | Yes | 311 |
+| [Lemmygrad](https://lemmygrad.ml) | Yes | No | Yes | No | Yes | 308 |
 | [Baraza](https://baraza.africa) | Yes | No | <span style="background-color: red; color: white;">No</span> | Yes | Yes | 1 |
 
 # What's next?
