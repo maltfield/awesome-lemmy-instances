@@ -42,6 +42,13 @@ LEMMY_STATS_CRAWLER_FILEPATH = 'lemmy-stats-crawler/' + LEMMY_STATS_CRAWLER_FILE
 #####################
 
 readme_contents = '''
+<style>
+red {
+	background-color: red;
+	color: white;
+}
+</style>
+
 # Awesome Lemmy Instances
 
 This repo was created to help users migrate from reddit to lemmy (a federated reddit alternative).
@@ -58,7 +65,7 @@ However, each server has their own local policies and configurations (for exampl
 
 ### Legend
 
- * **Adult** "Yes" means there no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
+ * **Adult** "Yes" means there's no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
  * **New Comm** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
  * **Silo** "No" means that you can interact with other lemmy instances. "Yes" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
  * **Downvotes** "Yes" means this instance allows downvotes. "No" means this instance has turned-off downvote functionality.
@@ -119,7 +126,7 @@ for instance in data['instance_details']:
 		new_comm = "No"
 
 	if federation_enabled == False or federated_allowed != None:
-		silo = "Yes"
+		silo = "<red>Yes</red>"
 	else:
 		silo = "No"
 
