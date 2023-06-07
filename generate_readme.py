@@ -18,7 +18,7 @@ import json
 #                                  SETTINGS                                    #
 ################################################################################
 
-LEMMY_STATS_CRAWLER_FILENAME = 'lemmy-stats-crawler.json'
+LEMMY_STATS_CRAWLER_FILENAME = 'lemmy-stats-crawler'
 
 ################################################################################
 #                                  FUNCTIONS                                   #
@@ -63,7 +63,7 @@ However, each server has their own policies. The table below will help you compa
 '''
 
 readme_contents += "| Instance | Adult | New Comm | \n"
-readme_contents += "| :---: | :---: | \n"
+readme_contents += "| :---: | :---: | :---: | \n"
 
 ################
 # PROCESS JSON #
@@ -107,8 +107,14 @@ for instance in data['instance_details']:
 	else:
 		adult = 'Yes'
 
+	if community_creation_admin_only == True:
+		new_comm = "Yes"
+	else:
+		new_comm = "No"
+
 	readme_contents += "| [" +name+ "](" +domain+ ") "
 	readme_contents += "| " +adult
+	readme_contents += "| " +new_comm
 	readme_contents +=  " |\n"
 
 with open( "README.md", "w" ) as readme_file:
