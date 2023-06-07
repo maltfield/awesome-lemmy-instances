@@ -18,7 +18,8 @@ import json
 #                                  SETTINGS                                    #
 ################################################################################
 
-LEMMY_STATS_CRAWLER_FILENAME = 'lemmy-stats-crawler'
+LEMMY_STATS_CRAWLER_FILENAME = 'lemmy-stats-crawler.json'
+LEMMY_STATS_CRAWLER_FILEPATH = 'lemmy-stats-crawler/' + LEMMY_STATS_CRAWLER_FILENAME
 
 ################################################################################
 #                                  FUNCTIONS                                   #
@@ -77,7 +78,7 @@ print( os.listdir() )
 print( os.listdir('lemmy-stats-crawler') )
 
 
-with open( LEMMY_STATS_CRAWLER_FILENAME ) as json_data:
+with open( LEMMY_STATS_CRAWLER_FILEPATH ) as json_data:
 	data = json.load(json_data)
 
 for instance in data['instance_details']:

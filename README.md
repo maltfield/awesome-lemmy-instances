@@ -17,9 +17,10 @@ However, each server has their own policies. The table below will help you compa
 
  * **Adult** "Yes" means there no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
  * **New Comm** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
+ * **Silo** "No" means that you can interact with other lemmy instances. "Yes" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
 
-| Instance | Adult | New Comm | 
-| :---: | :---: | :---: | 
+| Instance | Adult | New Comm | Silo | 
+| :---: | :---: | :---: | :---: | 
 | [Lemmy](lemmy.ml) | No | No |
 | [Beehaw](beehaw.org) | Yes | Yes |
 | [Lemmygrad](lemmygrad.ml) | No | No |
