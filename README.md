@@ -23,3 +23,8 @@ Comparison of different Lemmy Instances
 <td>three</td>
 </tr>
 </table>
+
+| one | two | three |
+| :---: | :---: | :---: |
+| one | two | three |
+| one | two | three |
