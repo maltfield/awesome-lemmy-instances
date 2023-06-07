@@ -58,12 +58,12 @@ However, each server has their own local policies and configurations (for exampl
 
 ### Legend
 
- * **Adult** "Yes" means there's no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
- * **NU** "Yes" means that new users can register accounts. "No" means that this instance is not accepting new account registrations at this time.
- * **NC** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
- * **Fed** "Yes" means that you can interact with other lemmy instances. "No" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
- * **↓otes** "Yes" means this instance allows downvotes. "No" means this instance has turned-off downvote functionality.
- * **Users** The number of users that have been active on this instance this month. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
+ * **NU** "Yes" means that **New Users** can register accounts. "No" means that this instance is not accepting new account registrations at this time.
+ * **NC** "Yes" means that you can create a **New Community**. "No" means that only admins can create new communities on this instance.
+ * **Fed** "Yes" means that you can interact with other **federated** lemmy instances. "No" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
+ * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed.
+ * **↓otes** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
+ * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
 '''
 
