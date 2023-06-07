@@ -18,43 +18,44 @@ However, each server has their own policies. The table below will help you compa
  * **Adult** "Yes" means there no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
  * **New Comm** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
  * **Silo** "No" means that you can interact with other lemmy instances. "Yes" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
+ * **Users** The number of users that have been active on this instance this month.
 
-| Instance | Adult | New Comm | Silo | 
-| :---: | :---: | :---: | :---: | 
-| [Lemmy](lemmy.ml) | No | No |
-| [Beehaw](beehaw.org) | Yes | Yes |
-| [Lemmygrad](lemmygrad.ml) | No | No |
-| [Feddit](feddit.de) | Yes | No |
-| [Sopuli](sopuli.xyz) | Yes | No |
-| [midwest.social](midwest.social) | Yes | No |
-| [Lemmy.ca](lemmy.ca) | Yes | No |
-| [Feddit.it](feddit.it) | Yes | Yes |
-| [Blåhaj Lemmy](lemmy.blahaj.zone) | Yes | No |
-| [SLRPNK](slrpnk.net) | No | No |
-| [Lemmy.eus](lemmy.eus) | Yes | No |
-| [Mander](mander.xyz) | Yes | No |
-| [PerthChat](lemmy.perthchat.org) | Yes | No |
-| [Lemmy Portugal 🇵🇹](lemmy.pt) | No | Yes |
-| [Internet burnout](group.lt) | Yes | No |
-| [Baomi.TV](baomi.tv) | Yes | No |
-| [九尾社群](bbs.9tail.net) | Yes | No |
-| [鴉は拠り所について語り合う](lm.korako.me) | Yes | No |
-| [XMPP Community](community.xmpp.net) | No | Yes |
-| [Stammtisch](stammtisch.hallertau.social) | Yes | No |
-| [Privacy Community](community.nicfab.it) | Yes | Yes |
-| [RollenspielMonster](lemmy.rollenspiel.monster) | Yes | No |
-| [Baraza](baraza.africa) | Yes | No |
-| [0xDD](0xdd.org.ru) | No | Yes |
-| [Linkage @ DS8](linkage.ds8.zone) | Yes | No |
-| [Max's donky farm](donky.social) | Yes | No |
-| [Lemmy Coupou.fr](lemmy.coupou.fr) | Yes | No |
-| [foros.fediverso.gal](foros.fediverso.gal) | No | Yes |
-| [rimkus-corner](lemmy.rimkus.it) | Yes | No |
-| [lemmy.schuerz.at](lemmy.schuerz.at) | Yes | Yes |
-| [Toot!](lemmy.toot.pt) | Yes | No |
-| [bolha.social (beta)](bolha.social) | Yes | Yes |
-| [fediBB](fedibb.ml) | No | Yes |
-| [Lemmy](lemmy.services.coupou.fr) | Yes | No |
-| [Helvetet](lemmy.helvetet.eu) | No | No |
-| [Clueware's lemmy](lemmy.clueware.org) | Yes | No |
-| [Lemmy graz.social](lemmy.graz.social) | No | No |
+| Instance | Adult | New Comm | Silo | Users | 
+| :---: | :---: | :---: | :---: | :---: | 
+| [Lemmy](lemmy.ml) | No | No | 1405 |
+| [Beehaw](beehaw.org) | Yes | Yes | 701 |
+| [Lemmygrad](lemmygrad.ml) | No | No | 301 |
+| [Feddit](feddit.de) | Yes | No | 278 |
+| [Sopuli](sopuli.xyz) | Yes | No | 139 |
+| [midwest.social](midwest.social) | Yes | No | 102 |
+| [Lemmy.ca](lemmy.ca) | Yes | No | 78 |
+| [Feddit.it](feddit.it) | Yes | Yes | 63 |
+| [Blåhaj Lemmy](lemmy.blahaj.zone) | Yes | No | 33 |
+| [SLRPNK](slrpnk.net) | No | No | 22 |
+| [Lemmy.eus](lemmy.eus) | Yes | No | 10 |
+| [Mander](mander.xyz) | Yes | No | 8 |
+| [PerthChat](lemmy.perthchat.org) | Yes | No | 7 |
+| [Lemmy Portugal 🇵🇹](lemmy.pt) | No | Yes | 7 |
+| [Internet burnout](group.lt) | Yes | No | 5 |
+| [Baomi.TV](baomi.tv) | Yes | No | 5 |
+| [九尾社群](bbs.9tail.net) | Yes | No | 4 |
+| [鴉は拠り所について語り合う](lm.korako.me) | Yes | No | 3 |
+| [XMPP Community](community.xmpp.net) | No | Yes | 2 |
+| [Stammtisch](stammtisch.hallertau.social) | Yes | No | 1 |
+| [Privacy Community](community.nicfab.it) | Yes | Yes | 1 |
+| [RollenspielMonster](lemmy.rollenspiel.monster) | Yes | No | 1 |
+| [Baraza](baraza.africa) | Yes | No | 1 |
+| [0xDD](0xdd.org.ru) | No | Yes | 1 |
+| [Linkage @ DS8](linkage.ds8.zone) | Yes | No | 1 |
+| [Max's donky farm](donky.social) | Yes | No | 1 |
+| [Lemmy Coupou.fr](lemmy.coupou.fr) | Yes | No | 1 |
+| [foros.fediverso.gal](foros.fediverso.gal) | No | Yes | 1 |
+| [rimkus-corner](lemmy.rimkus.it) | Yes | No | 1 |
+| [lemmy.schuerz.at](lemmy.schuerz.at) | Yes | Yes | 1 |
+| [Toot!](lemmy.toot.pt) | Yes | No | 0 |
+| [bolha.social (beta)](bolha.social) | Yes | Yes | 0 |
+| [fediBB](fedibb.ml) | No | Yes | 0 |
+| [Lemmy](lemmy.services.coupou.fr) | Yes | No | 0 |
+| [Helvetet](lemmy.helvetet.eu) | No | No | 0 |
+| [Clueware's lemmy](lemmy.clueware.org) | Yes | No | 0 |
+| [Lemmy graz.social](lemmy.graz.social) | No | No | 0 |

@@ -61,11 +61,12 @@ However, each server has their own policies. The table below will help you compa
  * **Adult** "Yes" means there no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
  * **New Comm** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
  * **Silo** "No" means that you can interact with other lemmy instances. "Yes" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
+ * **Users** The number of users that have been active on this instance this month.
 
 '''
 
-readme_contents += "| Instance | Adult | New Comm | Silo | \n"
-readme_contents += "| :---: | :---: | :---: | :---: | \n"
+readme_contents += "| Instance | Adult | New Comm | Silo | Users | \n"
+readme_contents += "| :---: | :---: | :---: | :---: | :---: | \n"
 
 ################
 # PROCESS JSON #
@@ -101,8 +102,9 @@ for instance in data['instance_details']:
 	community_creation_admin_only = instance['site_info']['site_view']['local_site']['community_creation_admin_only']
 	enable_downvotes = instance['site_info']['site_view']['local_site']['enable_downvotes']
 	enable_nsfw = instance['site_info']['site_view']['local_site']['enable_nsfw']
+	users_month = instance['site_info']['site_view']['counts']['users_active_month']
 
-	#print( instance['site_info']['site_view']['local_site'] )
+	#print( instance['site_info']['site_view'] )
 
 	# is this instance adult-friendly?
 	if slur_filter != None or enable_nsfw != True:
@@ -118,6 +120,7 @@ for instance in data['instance_details']:
 	readme_contents += "| [" +name+ "](" +domain+ ") "
 	readme_contents += "| " +adult+ " "
 	readme_contents += "| " +new_comm+ " "
+	readme_contents += "| " +str(users_month)+ " "
 	readme_contents +=  "|\n"
 
 with open( "README.md", "w" ) as readme_file:
