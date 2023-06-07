@@ -10,6 +10,6 @@ git clone https://github.com/LemmyNet/lemmy-stats-crawler.git
 cd lemmy-stats-crawler
 
 #~/.cargo/bin/cargo run -- --start-instances baraza.africa,lemmy.ml
-cargo run -- --start-instances baraza.africa,lemmy.ml
+cargo run -- --start-instances baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de > lemmy-stats-crawler.json
 
 exit 0

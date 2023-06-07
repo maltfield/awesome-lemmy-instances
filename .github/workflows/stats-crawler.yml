@@ -19,3 +19,15 @@ jobs:
     - name: Execute script to get a list of lemmy instances
       run: "./stats-crawler.sh"
       shell: bash
+
+    - name: Execute script to generate README.md file
+      run: "./generate_readme.py"
+      shell: bash
+
+    - name: Push changes to git
+      run: |
+        git config --global user.name 'maltfield'
+        git config --global user.email 'michael@michaelaltfield.net'
+        git commit -am "Auto-update"
+        git push
+
