@@ -19,16 +19,48 @@ However, each server has their own local policies and configurations (for exampl
  * **NC** "Yes" means that you can create a **New Community**. "No" means that only admins can create new communities on this instance.
  * **Fed** "Yes" means that you can interact with other **federated** lemmy instances. "No" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
  * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed.
- * **↓otes** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
+ * **↓vote** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
 | Instance | NU | NC | Fed | Adult | ↓vote | Users | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| [Lemmy](https://lemmy.ml) | Yes | No | Yes | No | Yes | 1538 |
-| [Beehaw](https://beehaw.org) | Yes | Yes | Yes | Yes | No | 1000 |
-| [Feddit](https://feddit.de) | Yes | No | Yes | Yes | Yes | 311 |
-| [Lemmygrad](https://lemmygrad.ml) | Yes | No | Yes | No | Yes | 308 |
-| [Baraza](https://baraza.africa) | Yes | No | <span style="background-color: red; color: white;">No</span> | Yes | Yes | 1 |
+| [Lemmy](https://lemmy.ml) | Yes | Yes | Yes | No | Yes | 1405 |
+| [Beehaw](https://beehaw.org) | Yes | No | Yes | Yes | No | 701 |
+| [Lemmygrad](https://lemmygrad.ml) | Yes | Yes | Yes | No | Yes | 301 |
+| [Feddit](https://feddit.de) | Yes | Yes | Yes | Yes | Yes | 278 |
+| [Sopuli](https://sopuli.xyz) | Yes | Yes | Yes | Yes | Yes | 139 |
+| [midwest.social](https://midwest.social) | Yes | Yes | Yes | Yes | Yes | 102 |
+| [Lemmy.ca](https://lemmy.ca) | Yes | Yes | Yes | Yes | Yes | 78 |
+| [Feddit.it](https://feddit.it) | Yes | No | Yes | Yes | Yes | 63 |
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes | Yes | Yes | Yes | No | 33 |
+| [SLRPNK](https://slrpnk.net) | Yes | Yes | Yes | No | No | 22 |
+| [Lemmy.eus](https://lemmy.eus) | Yes | Yes | Yes | Yes | Yes | 10 |
+| [Mander](https://mander.xyz) | Yes | Yes | Yes | Yes | Yes | 8 |
+| [PerthChat](https://lemmy.perthchat.org) | Yes | Yes | Yes | Yes | No | 7 |
+| [Lemmy Portugal 🇵🇹](https://lemmy.pt) | Yes | No | Yes | No | Yes | 7 |
+| [Internet burnout](https://group.lt) | Yes | Yes | Yes | Yes | Yes | 5 |
+| [Baomi.TV](https://baomi.tv) | Yes | Yes | <span style="background-color: red; color: white;">No</span> | Yes | Yes | 5 |
+| [九尾社群](https://bbs.9tail.net) | Yes | Yes | <span style="background-color: red; color: white;">No</span> | Yes | Yes | 4 |
+| [鴉は拠り所について語り合う](https://lm.korako.me) | No | Yes | Yes | Yes | Yes | 3 |
+| [XMPP Community](https://community.xmpp.net) | Yes | No | Yes | No | No | 2 |
+| [Stammtisch](https://stammtisch.hallertau.social) | Yes | Yes | <span style="background-color: red; color: white;">No</span> | Yes | Yes | 1 |
+| [Privacy Community](https://community.nicfab.it) | Yes | No | <span style="background-color: red; color: white;">No</span> | Yes | Yes | 1 |
+| [RollenspielMonster](https://lemmy.rollenspiel.monster) | Yes | Yes | Yes | Yes | Yes | 1 |
+| [Baraza](https://baraza.africa) | Yes | Yes | <span style="background-color: red; color: white;">No</span> | Yes | Yes | 1 |
+| [0xDD](https://0xdd.org.ru) | Yes | No | Yes | No | Yes | 1 |
+| [Linkage @ DS8](https://linkage.ds8.zone) | Yes | Yes | Yes | Yes | Yes | 1 |
+| [Max's donky farm](https://donky.social) | Yes | Yes | Yes | Yes | Yes | 1 |
+| [Lemmy Coupou.fr](https://lemmy.coupou.fr) | No | Yes | Yes | Yes | Yes | 1 |
+| [foros.fediverso.gal](https://foros.fediverso.gal) | Yes | No | Yes | No | Yes | 1 |
+| [rimkus-corner](https://lemmy.rimkus.it) | Yes | Yes | Yes | Yes | Yes | 1 |
+| [lemmy.schuerz.at](https://lemmy.schuerz.at) | Yes | No | Yes | Yes | Yes | 1 |
+| [Toot!](https://lemmy.toot.pt) | Yes | Yes | Yes | Yes | Yes | 0 |
+| [bolha.social (beta)](https://bolha.social) | Yes | No | Yes | Yes | Yes | 0 |
+| [fediBB](https://fedibb.ml) | Yes | No | Yes | No | Yes | 0 |
+| [Lemmy](https://lemmy.services.coupou.fr) | No | Yes | Yes | Yes | Yes | 0 |
+| [Helvetet](https://lemmy.helvetet.eu) | Yes | Yes | Yes | No | Yes | 0 |
+| [Clueware's lemmy](https://lemmy.clueware.org) | No | Yes | Yes | Yes | Yes | 0 |
+| [Lemmy graz.social](https://lemmy.graz.social) | Yes | Yes | Yes | No | No | 0 |
 
 # What's next?
 

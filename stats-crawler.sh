@@ -27,7 +27,7 @@ ls
 if [[ "${current_branch}" == "dev" ]]; then
 	# this is a run in dev; keep the list short for faster iteration
 
-	time cargo run -- --start-instances baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de --json --max-crawl-distance 0 > lemmy-stats-crawler.json
+	time cargo run -- --start-instances baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de, lemmy.blahaj.zone --json --max-crawl-distance 0 > lemmy-stats-crawler.json
 
 else
 	# this isn't dev; do a full crawl
