@@ -136,7 +136,7 @@ for instance in data['instance_details']:
 	readme_contents += "| " +str(users_month)+ " "
 	readme_contents +=  "|\n"
 
-	readme_contents +=  """
+readme_contents +=  """
 # What's next?"
 
 ## Subscribe to ~~Subreddits~~ Communities
