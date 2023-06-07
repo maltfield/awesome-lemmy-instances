@@ -130,7 +130,7 @@ for instance in data['instance_details']:
 	else:
 		downvotes = "No"
 
-	if registration_mode == "closed"
+	if registration_mode == "closed":
 		new_users = "No"
 	else:
 		new_users = "Yes"
