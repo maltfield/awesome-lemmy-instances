@@ -1,4 +1,4 @@
-#git config --global user.email 'michael@michaelaltfield.net'!/usr/bin/env python3
+#!/usr/bin/env python3
 ################################################################################
 # File:    generate_readme.py
 # Version: 0.1
