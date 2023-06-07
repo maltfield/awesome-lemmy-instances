@@ -136,6 +136,29 @@ for instance in data['instance_details']:
 	readme_contents += "| " +str(users_month)+ " "
 	readme_contents +=  "|\n"
 
+	readme_contents +=  """
+# What's next?"
+
+## Subscribe to ~~Subreddits~~ Communities
+
+After you pick an instance and register an account, you'll want to subscribe to communities. You can subscribe to "local" communities on your instance, and (if you chose an instance that isn't siloed) you can also subscribe to "remote" communities on other instances.
+
+To find popular communities across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/] run by feddit.de.
+
+ * https://browse.feddit.de/
+
+## Other links
+
+You may want to also checkout the following websites for more information about Lemmy
+
+ * [Official Lemmy Documentation](https://join-lemmy.org/docs/en/index.html)
+ * [Lemmy Map](https://lemmymap.feddit.de) - Data visualization of lemmy instances
+ * [Lemmy Sourcecode](https://github.com/LemmyNet/lemmy)
+ * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
+ * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
+
+"""
+
 with open( "README.md", "w" ) as readme_file:
 	readme_file.write( readme_contents )
 	readme_contents += "| " +downvotes+ " "
