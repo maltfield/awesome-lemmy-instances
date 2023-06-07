@@ -94,9 +94,9 @@ for instance in data['instance_details']:
 		federated_allowed = instance['site_info']['federated_instances']['allowed']
 		federated_blocked = instance['site_info']['federated_instances']['blocked']
 	else:
-		federated_linked = []
-		federated_allowed = []
-		federated_blocked = []
+		federated_linked = None
+		federated_allowed = None
+		federated_blocked = None
 
 	registration_mode = instance['site_info']['site_view']['local_site']['registration_mode']
 	slur_filter = instance['site_info']['site_view']['local_site']['slur_filter_regex']
@@ -118,6 +118,14 @@ for instance in data['instance_details']:
 	else:
 		new_comm = "No"
 
+	print( federation_enabled )
+	print( federated_allowed )
+	print()
+	if federation_enabled == False or federated_allowed != None:
+		silo = "Yes"
+	else:
+		silo = "No"
+
 	if enable_downvotes == True:
 		downvotes = "Yes"
 	else:
@@ -126,6 +134,7 @@ for instance in data['instance_details']:
 	readme_contents += "| [" +name+ "](" +domain+ ") "
 	readme_contents += "| " +adult+ " "
 	readme_contents += "| " +new_comm+ " "
+	readme_contents += "| " +silo+ " "
 	readme_contents += "| " +downvotes+ " "
 	readme_contents += "| " +str(users_month)+ " "
 	readme_contents +=  "|\n"
