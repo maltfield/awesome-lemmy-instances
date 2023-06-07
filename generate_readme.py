@@ -61,12 +61,13 @@ However, each server has their own policies. The table below will help you compa
  * **Adult** "Yes" means there no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
  * **New Comm** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
  * **Silo** "No" means that you can interact with other lemmy instances. "Yes" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
+ * **Downvotes** "Yes" means this instance allows downvotes. "No" means this instance has turned-off downvote functionality.
  * **Users** The number of users that have been active on this instance this month.
 
 '''
 
-readme_contents += "| Instance | Adult | New Comm | Silo | Users | \n"
-readme_contents += "| :---: | :---: | :---: | :---: | :---: | \n"
+readme_contents += "| Instance | Adult | New Comm | Silo | Downvote | Users | \n"
+readme_contents += "| :---: | :---: | :---: | :---: | :---: | :---: | \n"
 
 ################
 # PROCESS JSON #
@@ -117,9 +118,15 @@ for instance in data['instance_details']:
 	else:
 		new_comm = "No"
 
+	if enable_downvotes == True:
+		downvotes = "Yes"
+	else:
+		downvotes = "No"
+
 	readme_contents += "| [" +name+ "](" +domain+ ") "
 	readme_contents += "| " +adult+ " "
 	readme_contents += "| " +new_comm+ " "
+	readme_contents += "| " +downvotes+ " "
 	readme_contents += "| " +str(users_month)+ " "
 	readme_contents +=  "|\n"
 
