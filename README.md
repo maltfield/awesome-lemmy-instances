@@ -16,13 +16,14 @@ However, each server has their own local policies and configurations (for exampl
 ### Legend
 
  * **Adult** "Yes" means there's no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
- * **Grow** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
+ * **NC** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
  * **Fed** "Yes" means that you can interact with other lemmy instances. "No" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
  * **↓otes** "Yes" means this instance allows downvotes. "No" means this instance has turned-off downvote functionality.
  * **Users** The number of users that have been active on this instance this month.
 
-| Instance | Adult | Grow | Fed | ↓vote | Users | 
+| Instance | Adult | NC | Fed | ↓vote | Users | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
+| [Lemmy](https://lemmy.ml) | No | No | Yes | Yes | 1522 |
 | [Beehaw](https://beehaw.org) | Yes | Yes | Yes | No | 980 |
 | [Lemmygrad](https://lemmygrad.ml) | No | No | Yes | Yes | 307 |
 | [Feddit](https://feddit.de) | Yes | No | Yes | Yes | 307 |
