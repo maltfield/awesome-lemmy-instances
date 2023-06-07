@@ -59,11 +59,12 @@ However, each server has their own policies. The table below will help you compa
 
  * **Adult** "Yes" means there no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
  * **New Comm** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
+ * **Silo** "No" means that you can interact with other lemmy instances. "Yes" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
 
 '''
 
-readme_contents += "| Instance | Adult | New Comm | \n"
-readme_contents += "| :---: | :---: | :---: | \n"
+readme_contents += "| Instance | Adult | New Comm | Silo | \n"
+readme_contents += "| :---: | :---: | :---: | :---: | \n"
 
 ################
 # PROCESS JSON #
@@ -73,6 +74,7 @@ import os
 print( os.path.dirname(os.path.realpath(__file__)) )
 print( os.getcwd() )
 print( os.listdir() )
+print( os.listdir('lemmy-stats-crawler') )
 
 
 with open( LEMMY_STATS_CRAWLER_FILENAME ) as json_data:
@@ -113,9 +115,9 @@ for instance in data['instance_details']:
 		new_comm = "No"
 
 	readme_contents += "| [" +name+ "](" +domain+ ") "
-	readme_contents += "| " +adult
-	readme_contents += "| " +new_comm
-	readme_contents +=  " |\n"
+	readme_contents += "| " +adult+ " "
+	readme_contents += "| " +new_comm+ " "
+	readme_contents +=  "|\n"
 
 with open( "README.md", "w" ) as readme_file:
 	readme_file.write( readme_contents )
