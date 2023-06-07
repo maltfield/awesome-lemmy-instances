@@ -59,14 +59,15 @@ However, each server has their own local policies and configurations (for exampl
 ### Legend
 
  * **Adult** "Yes" means there's no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
+ * **NU** "Yes" means that new users can register accounts. "No" means that this instance is not accepting new account registrations at this time.
  * **NC** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
  * **Fed** "Yes" means that you can interact with other lemmy instances. "No" means that the instance is partially of fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
  * **↓otes** "Yes" means this instance allows downvotes. "No" means this instance has turned-off downvote functionality.
- * **Users** The number of users that have been active on this instance this month.
+ * **Users** The number of users that have been active on this instance this month. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
 '''
 
-readme_contents += "| Instance | Adult | NC | Fed | ↓vote | Users | \n"
+readme_contents += "| Instance | NU | NC | Fed | Adult | ↓vote | Users | \n"
 readme_contents += "| :---: | :---: | :---: | :---: | :---: | :---: | \n"
 
 ################
@@ -104,6 +105,7 @@ for instance in data['instance_details']:
 	enable_downvotes = instance['site_info']['site_view']['local_site']['enable_downvotes']
 	enable_nsfw = instance['site_info']['site_view']['local_site']['enable_nsfw']
 	users_month = instance['site_info']['site_view']['counts']['users_active_month']
+	registration_mode = instance['site_info']['site_view']['local_site']['registration_mode']
 
 	#print( instance['site_info']['site_view'] )
 
@@ -128,10 +130,16 @@ for instance in data['instance_details']:
 	else:
 		downvotes = "No"
 
+	if registration_mode == "closed"
+		new_users = "No"
+	else:
+		new_users = "Yes"
+
 	readme_contents += "| [" +name+ "](https://" +domain+ ") "
-	readme_contents += "| " +adult+ " "
+	readme_contents += "| " +new_users+ " "
 	readme_contents += "| " +new_comm+ " "
 	readme_contents += "| " +fed+ " "
+	readme_contents += "| " +adult+ " "
 	readme_contents += "| " +downvotes+ " "
 	readme_contents += "| " +str(users_month)+ " "
 	readme_contents +=  "|\n"
