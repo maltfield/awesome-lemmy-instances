@@ -1,4 +1,6 @@
 name: build
+permissions:
+  contents: write
 
 # execute this workflow automatically, but only when pushing to master
 on:
