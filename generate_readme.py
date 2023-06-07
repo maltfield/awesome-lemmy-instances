@@ -118,9 +118,6 @@ for instance in data['instance_details']:
 	else:
 		new_comm = "No"
 
-	print( federation_enabled )
-	print( federated_allowed )
-	print()
 	if federation_enabled == False or federated_allowed != None:
 		silo = "Yes"
 	else:
@@ -141,3 +138,4 @@ for instance in data['instance_details']:
 
 with open( "README.md", "w" ) as readme_file:
 	readme_file.write( readme_contents )
+	readme_contents += "| " +downvotes+ " "
