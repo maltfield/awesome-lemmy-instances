@@ -22,13 +22,13 @@ jobs:
 #      run: "./stats-crawler.sh"
 #      shell: bash
 
-    - name: Execute script to generate README.md file
-      run: "./generate_readme.py"
-      shell: bash
-
     - name: test
       run: |
         echo "test2" > lemmy-stats-crawler.json
+
+    - name: Execute script to generate README.md file
+      run: "./generate_readme.py"
+      shell: bash
 
     - name: Push changes to git
       run: |
