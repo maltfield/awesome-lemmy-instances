@@ -68,7 +68,7 @@ However, each server has their own local policies and configurations (for exampl
 '''
 
 readme_contents += "| Instance | NU | NC | Fed | Adult | ↓vote | Users | \n"
-readme_contents += "| :---: | :---: | :---: | :---: | :---: | :---: | \n"
+readme_contents += "| :---: | :---: | :---: | :---: | :---: | :---: | :---: | \n"
 
 ################
 # PROCESS JSON #
