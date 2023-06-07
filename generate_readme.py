@@ -128,7 +128,7 @@ for instance in data['instance_details']:
 	else:
 		downvotes = "No"
 
-	readme_contents += "| [" +name+ "](" +domain+ ") "
+	readme_contents += "| [" +name+ "](https://" +domain+ ") "
 	readme_contents += "| " +adult+ " "
 	readme_contents += "| " +new_comm+ " "
 	readme_contents += "| " +silo+ " "
