@@ -1,6 +1,17 @@
 #!/bin/bash
 set -x
 
+#####################
+# DECLARE VARIABLES #
+#####################
+
+# get the current branch of the 'awesome-lemmy-instances' repo
+current_branch=$(git branch --show-current)
+
+#######################
+# LEMMY-STATS-CRAWLER #
+#######################
+
 # this is so fucking unsafe https://rustup.rs/
 #curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 which cargo
@@ -9,11 +20,10 @@ cargo --version
 git clone https://github.com/LemmyNet/lemmy-stats-crawler.git
 cd lemmy-stats-crawler
 
-#~/.cargo/bin/cargo run -- --start-instances baraza.africa,lemmy.ml
+# some pre-run output for debugging
 ls
 
 # is this our dev branch?
-current_branch=$(git branch --show-current)
 if [[ "${current_branch}" == "dev" ]]; then
 	# this is a run in dev; keep the list short for faster iteration
 
@@ -26,6 +36,7 @@ else
 
 fi
 
+# some post-run output for debugging
 ls
 du -sh lemmy-stats-crawler.json
 wc -l lemmy-stats-crawler.json
