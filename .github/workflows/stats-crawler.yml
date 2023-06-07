@@ -24,6 +24,10 @@ jobs:
 #      run: "./generate_readme.py"
 #      shell: bash
 
+    - name: Temp test (delete me)
+      run: |
+        echo 'test' > README.md
+
     - name: Push changes to git
       run: |
         git config --global user.name 'maltfield'
