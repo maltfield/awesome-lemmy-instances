@@ -1,0 +1,21 @@
+name: build
+
+# execute this workflow automatically, but only when pushing to master
+on:
+  push:
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
+
+jobs:
+
+  linux:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Execute script to get a list of lemmy instances
+      run: "stats-crawler.sh"
+      shell: bash
