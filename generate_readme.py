@@ -49,18 +49,31 @@ Because lemmy is federated (like email), there are many different websites where
 
 However, each server has their own policies. The table below will help you compare each site to decide where to register your new lemmy account.
 
+### Terms
+
+ * Instance = A lemmy instance is a website that runs the lemmy software
+ * Community = Each instance has many communities. in reddit, communities were called subreddits.
+ * NSFW = Not Safe For Work
 
 ### Legend
 
  * **Adult** "Yes" means there no profanity filters or blocking of NSFW content. "No" means that there are profanity filters or NSFW content is not allowed.
+ * **New Comm** "Yes" means that you can create a new community. "No" means that only admins can create new communities on this instance.
+
 '''
 
-readme_contents += "| Instance | Adult | \n"
+readme_contents += "| Instance | Adult | New Comm | \n"
 readme_contents += "| :---: | :---: | \n"
 
 ################
 # PROCESS JSON #
 ################
+
+import os
+print( os.path.dirname(os.path.realpath(__file__)) )
+print( os.getcwd() )
+print( os.listdir() )
+
 
 with open( LEMMY_STATS_CRAWLER_FILENAME ) as json_data:
 	data = json.load(json_data)
