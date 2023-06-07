@@ -143,7 +143,7 @@ readme_contents +=  """
 
 After you pick an instance and register an account, you'll want to subscribe to communities. You can subscribe to "local" communities on your instance, and (if you chose an instance that isn't siloed) you can also subscribe to "remote" communities on other instances.
 
-To find popular communities across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/] run by feddit.de.
+To find popular communities across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/) run by feddit.de.
 
  * https://browse.feddit.de/
 
