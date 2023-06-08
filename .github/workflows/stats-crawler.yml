@@ -22,6 +22,9 @@ jobs:
       shell: bash
       run: |
 
+        # install depends
+        sudo apt-get install python3-pandas  python3-tabulate
+
         # first generate the lemmy-stats-crawler.json file
         ./stats-crawler.sh
 
@@ -31,6 +34,7 @@ jobs:
         # push new README to GitHub
         git config --global user.name 'maltfield'
         git config --global user.email 'michael@michaelaltfield.net'
+        git add -f awesome-lemmy-instances.csv
         git add -f README.md
         git commit -am "Auto-update"
         git push

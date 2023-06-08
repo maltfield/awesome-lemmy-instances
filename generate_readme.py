@@ -13,6 +13,7 @@
 ################################################################################
 
 import json
+import pandas as pd
 
 ################################################################################
 #                                  SETTINGS                                    #
@@ -65,10 +66,10 @@ However, each server has their own local policies and configurations (for exampl
  * **↓vote** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
+Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank">awesome-lemmy-instances.csv</a> file
 '''
 
-readme_contents += "| Instance | NU | NC | Fed | Adult | ↓vote | Users | \n"
-readme_contents += "| :---: | :---: | :---: | :---: | :---: | :---: | :---: | \n"
+csv_contents = "Instance,NU,NC,Fed,Adult,↓vote,Users\n"
 
 ################
 # PROCESS JSON #
@@ -79,7 +80,6 @@ print( os.path.dirname(os.path.realpath(__file__)) )
 print( os.getcwd() )
 print( os.listdir() )
 print( os.listdir('lemmy-stats-crawler') )
-
 
 with open( LEMMY_STATS_CRAWLER_FILEPATH ) as json_data:
 	data = json.load(json_data)
@@ -135,14 +135,25 @@ for instance in data['instance_details']:
 	else:
 		new_users = "Yes"
 
-	readme_contents += "| [" +name+ "](https://" +domain+ ") "
-	readme_contents += "| " +new_users+ " "
-	readme_contents += "| " +new_comm+ " "
-	readme_contents += "| " +fed+ " "
-	readme_contents += "| " +adult+ " "
-	readme_contents += "| " +downvotes+ " "
-	readme_contents += "| " +str(users_month)+ " "
-	readme_contents +=  "|\n"
+	csv_contents += "[" +name+ "](https://" +domain+ "),"
+	csv_contents += new_users+ ","
+	csv_contents += new_comm+ ","
+	csv_contents += fed+ ","
+	csv_contents += adult+ ","
+	csv_contents += downvotes+ ","
+	csv_contents += str(users_month)
+	csv_contents += "\n"
+
+# write the instance data table to the csv file
+with open( "awesome-lemmy-instances.csv", "w" ) as csv_file:
+	csv_file.write( csv_contents )
+
+# convert csv file data to markdown table
+df = pd.read_csv( "awesome-lemmy-instances.csv" )
+markdown_table = df.to_markdown( tablefmt='pipe', index = False )
+
+# add the markdown table to the readme's contents
+readme_contents += markdown_table
 
 readme_contents +=  """
 # What's next?
@@ -161,6 +172,7 @@ You may want to also checkout the following websites for more information about 
 
  * [Official Lemmy Documentation](https://join-lemmy.org/docs/en/index.html)
  * [Lemmy Map](https://lemmymap.feddit.de) - Data visualization of lemmy instances
+ * [The federation table](https://https://the-federation.info/platform/73) - Yet another table comparing lemmy instances
  * [Lemmy Sourcecode](https://github.com/LemmyNet/lemmy)
  * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
@@ -169,4 +181,3 @@ You may want to also checkout the following websites for more information about 
 
 with open( "README.md", "w" ) as readme_file:
 	readme_file.write( readme_contents )
-	readme_contents += "| " +downvotes+ " "
