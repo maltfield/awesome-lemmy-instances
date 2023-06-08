@@ -121,7 +121,7 @@ for instance in data['instance_details']:
 		new_comm = "Yes"
 
 	if federation_enabled == False or federated_allowed != None:
-		fed = '<span style="background-color: red; color: white;">No</span>'
+		fed = 'No'
 	else:
 		fed = "Yes"
 
