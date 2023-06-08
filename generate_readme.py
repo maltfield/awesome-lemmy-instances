@@ -154,6 +154,9 @@ with open( "awesome-lemmy-instances.csv", "w" ) as csv_file:
 df = pd.read_csv( "awesome-lemmy-instances.csv" )
 markdown_table = df.to_markdown( tablefmt='pipe', index = False )
 
+# add newline to protect the table from getting klobbered by the text around it
+markdown_table = "\n" + markdown_table + "\n"
+
 # add the markdown table to the readme's contents
 readme_contents += markdown_table
 
