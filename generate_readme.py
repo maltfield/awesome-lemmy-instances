@@ -66,7 +66,8 @@ However, each server has their own local policies and configurations (for exampl
  * **↓vote** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
-Download table as [awesome-lemmy-instances.csv](awesome-lemmy-instances.csv) file
+Download table as [awesome-lemmy-instances.csv](https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv) file
+Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank">awesome-lemmy-instances.csv</a> file
 '''
 
 csv_contents = "Instance,NU,NC,Fed,Adult,↓vote,Users\n"
@@ -141,7 +142,7 @@ for instance in data['instance_details']:
 	csv_contents += fed+ ","
 	csv_contents += adult+ ","
 	csv_contents += downvotes+ ","
-	csv_contents += str(users_month)+ ","
+	csv_contents += str(users_month)
 	csv_contents += "\n"
 
 # write the instance data table to the csv file
