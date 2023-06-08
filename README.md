@@ -23,14 +23,14 @@ However, each server has their own local policies and configurations (for exampl
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
 Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank">awesome-lemmy-instances.csv</a> file
-| Instance                                  | NU   | NC   | Fed                                                          | Adult   | ↓vote   |   Users |
-|:------------------------------------------|:-----|:-----|:-------------------------------------------------------------|:--------|:--------|--------:|
-| [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes                                                          | No      | Yes     |    1573 |
-| [Beehaw](https://beehaw.org)              | Yes  | No   | Yes                                                          | Yes     | No      |    1011 |
-| [Feddit](https://feddit.de)               | Yes  | Yes  | Yes                                                          | Yes     | Yes     |     317 |
-| [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes                                                          | No      | Yes     |     312 |
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes  | Yes  | Yes                                                          | Yes     | No      |      44 |
-| [Baraza](https://baraza.africa)           | Yes  | Yes  | <span style="background-color: red; color: white;">No</span> | Yes     | Yes     |       1 |
+| Instance                                  | NU   | NC   | Fed   | Adult   | ↓vote   |   Users |
+|:------------------------------------------|:-----|:-----|:------|:--------|:--------|--------:|
+| [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes   | No      | Yes     |    1574 |
+| [Beehaw](https://beehaw.org)              | Yes  | No   | Yes   | Yes     | No      |    1011 |
+| [Feddit](https://feddit.de)               | Yes  | Yes  | Yes   | Yes     | Yes     |     317 |
+| [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes   | No      | Yes     |     312 |
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes  | Yes  | Yes   | Yes     | No      |      44 |
+| [Baraza](https://baraza.africa)           | Yes  | Yes  | No    | Yes     | Yes     |       1 |
 # What's next?
 
 ## Subscribe to ~~Subreddits~~ Communities
