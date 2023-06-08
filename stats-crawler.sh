@@ -8,9 +8,7 @@ set -x
 # get the current branch of the 'awesome-lemmy-instances' repo
 current_branch=$(git branch --show-current)
 
-long_crawl_list="baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de"
-# Yes, the short one is longer...
-short_crawl_list="$long_crawl_list,lemmy.blahaj.zone"
+crawl_list="baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de,lemmy.blahaj.zone"
 
 #############
 # FUNCTIONS #
@@ -40,13 +38,13 @@ ls
 if [ "${current_branch}" = "dev" ]; then
 	# this is a run in dev; ~~keep the list short for faster iteration~~
 
-	time cargo run -- --start-instances $short_crawl_list \
+	time cargo run -- --start-instances $crawl_list \
 	--json --max-crawl-distance 0 > lemmy-stats-crawler.json
 
 else
 	# this isn't dev; do a full crawl
 
-	time cargo run -- --start-instances $long_crawl_list \
+	time cargo run -- --start-instances $crawl_list \
 	--json > lemmy-stats-crawler.json
 
 fi
