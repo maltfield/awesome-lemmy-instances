@@ -1,4 +1,5 @@
 Instance,NU,NC,Fed,Adult,↓vote,Users
+<<<<<<< HEAD
 [Lemmy](https://lemmy.ml),Yes,Yes,Yes,No,Yes,1574
 [Beehaw](https://beehaw.org),Yes,No,Yes,Yes,No,1011
 [Feddit](https://feddit.de),Yes,Yes,Yes,Yes,Yes,317
@@ -161,3 +162,11 @@ Instance,NU,NC,Fed,Adult,↓vote,Users
 [feddit EU](https://feddit.eu),Yes,Yes,<span style="background-color: red; color: white;">No</span>,Yes,Yes,0
 [NotDeadYet](https://lemmy.notdead.net),No,Yes,Yes,Yes,Yes,0
 [wyattsmith.org](https://lemmy.wyattsmith.org),No,Yes,Yes,Yes,Yes,0
+=======
+[Lemmy](https://lemmy.ml),Yes,Yes,Yes,No,Yes,1573
+[Beehaw](https://beehaw.org),Yes,No,Yes,Yes,No,1011
+[Feddit](https://feddit.de),Yes,Yes,Yes,Yes,Yes,317
+[Lemmygrad](https://lemmygrad.ml),Yes,Yes,Yes,No,Yes,312
+[Blåhaj Lemmy](https://lemmy.blahaj.zone),Yes,Yes,Yes,Yes,No,44
+[Baraza](https://baraza.africa),Yes,Yes,<span style="background-color: red; color: white;">No</span>,Yes,Yes,1
+>>>>>>> dev
