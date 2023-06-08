@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -x
 
 #####################
@@ -7,6 +7,17 @@ set -x
 
 # get the current branch of the 'awesome-lemmy-instances' repo
 current_branch=$(git branch --show-current)
+
+crawl_list="baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de,lemmy.blahaj.zone"
+
+#############
+# FUNCTIONS #
+#############
+
+FATAL() {
+	printf 'FATAL: %s. Aborting.\n' "$*"
+	exit 1
+}
 
 #######################
 # LEMMY-STATS-CRAWLER #
@@ -17,22 +28,24 @@ current_branch=$(git branch --show-current)
 which cargo
 cargo --version
 
-git clone https://github.com/LemmyNet/lemmy-stats-crawler.git
-cd lemmy-stats-crawler
+{ git clone https://github.com/LemmyNet/lemmy-stats-crawler.git \
+&& cd lemmy-stats-crawler; } || FATAL 'Git clone failed';
 
 # some pre-run output for debugging
 ls
 
 # is this our dev branch?
-if [[ "${current_branch}" == "dev" ]]; then
-	# this is a run in dev; keep the list short for faster iteration
+if [ "${current_branch}" = "dev" ]; then
+	# this is a run in dev; ~~keep the list short for faster iteration~~
 
-	time cargo run -- --start-instances baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de,lemmy.blahaj.zone --json --max-crawl-distance 0 > lemmy-stats-crawler.json
+	time cargo run -- --start-instances $crawl_list \
+	--json --max-crawl-distance 0 > lemmy-stats-crawler.json
 
 else
 	# this isn't dev; do a full crawl
 
-	time cargo run -- --start-instances baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de --json > lemmy-stats-crawler.json
+	time cargo run -- --start-instances $crawl_list \
+	--json > lemmy-stats-crawler.json
 
 fi
 
