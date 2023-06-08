@@ -28,10 +28,10 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 | Instance                                  | NU   | NC   | Fed   | Adult   | ↓V   |   Users |
 |:------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|
-| [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |    1653 |
+| [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |    1671 |
 | [Beehaw](https://beehaw.org)              | Yes  | No   | Yes   | Yes     | No   |    1011 |
-| [Feddit](https://feddit.de)               | Yes  | Yes  | Yes   | Yes     | Yes  |     340 |
-| [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes   | No      | Yes  |     316 |
+| [Feddit](https://feddit.de)               | Yes  | Yes  | Yes   | Yes     | Yes  |     350 |
+| [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes   | No      | Yes  |     317 |
 | [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes  | Yes  | Yes   | Yes     | No   |      48 |
 | [Baraza](https://baraza.africa)           | Yes  | Yes  | No    | Yes     | Yes  |       1 |
 
@@ -51,8 +51,9 @@ You may want to also checkout the following websites for more information about 
 
  * [Official Lemmy Documentation](https://join-lemmy.org/docs/en/index.html)
  * [Lemmy Map](https://lemmymap.feddit.de) - Data visualization of lemmy instances
- * [The Federation Info](https://https://the-federation.info/platform/73) - Another table comparing lemmy instances
+ * [The Federation Info](https://the-federation.info/platform/73) - Another table comparing lemmy instances (with pretty charts)
  * [Federation Observer](https://lemmy.fediverse.observer/list) - Yet another table comparing lemmy instances
+ * [FediDB](https://fedidb.org/software/lemmy) - Yet another site comparing lemmy instances (with pretty charts)
  * [Lemmy Sourcecode](https://github.com/LemmyNet/lemmy)
  * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
