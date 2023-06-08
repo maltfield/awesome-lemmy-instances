@@ -66,7 +66,6 @@ However, each server has their own local policies and configurations (for exampl
  * **↓vote** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
-Download table as [awesome-lemmy-instances.csv](https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv) file
 Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank">awesome-lemmy-instances.csv</a> file
 '''
 
@@ -151,7 +150,7 @@ with open( "awesome-lemmy-instances.csv", "w" ) as csv_file:
 
 # convert csv file data to markdown table
 df = pd.read_csv( "awesome-lemmy-instances.csv" )
-markdown_table = df.to_markdown( tablefmt='pipe' )
+markdown_table = df.to_markdown( tablefmt='pipe', index = False )
 
 # add the markdown table to the readme's contents
 readme_contents += markdown_table
