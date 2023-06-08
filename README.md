@@ -25,14 +25,16 @@ However, each server has their own local policies and configurations (for exampl
 Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
+
 | Instance                                  | NU   | NC   | Fed   | Adult   | ↓V   |   Users |
 |:------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|
-| [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |    1650 |
+| [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |    1653 |
 | [Beehaw](https://beehaw.org)              | Yes  | No   | Yes   | Yes     | No   |    1011 |
-| [Feddit](https://feddit.de)               | Yes  | Yes  | Yes   | Yes     | Yes  |     339 |
-| [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes   | No      | Yes  |     315 |
+| [Feddit](https://feddit.de)               | Yes  | Yes  | Yes   | Yes     | Yes  |     340 |
+| [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes   | No      | Yes  |     316 |
 | [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes  | Yes  | Yes   | Yes     | No   |      48 |
 | [Baraza](https://baraza.africa)           | Yes  | Yes  | No    | Yes     | Yes  |       1 |
+
 # What's next?
 
 ## Subscribe to ~~Subreddits~~ Communities
