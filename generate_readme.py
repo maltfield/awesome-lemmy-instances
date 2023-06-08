@@ -67,6 +67,8 @@ However, each server has their own local policies and configurations (for exampl
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
 Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
+
+> ⓘ Note To view a wider version of the table, [click here](README.md).
 '''
 
 csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users\n"
