@@ -36,7 +36,9 @@ ls
 
 # is this our dev branch?
 if [ "${current_branch}" = "dev" ]; then
-	# this is a run in dev; ~~keep the list short for faster iteration~~
+	# this is a run in dev; We limit the `max-crawl-distance` to 0 here (so
+	# the crawler does not go to other instances than those explicitly
+	# listed), for faster execution.
 
 	time cargo run -- --start-instances $crawl_list \
 	--json --max-crawl-distance 0 > lemmy-stats-crawler.json
