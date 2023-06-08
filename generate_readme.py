@@ -84,71 +84,71 @@ print( os.listdir() )
 print( os.listdir('lemmy-stats-crawler') )
 
 with open( LEMMY_STATS_CRAWLER_FILEPATH ) as json_data:
-	data = json.load(json_data)
+    data = json.load(json_data)
 
 for instance in data['instance_details']:
 
-	domain = instance['domain']
-	name = instance['site_info']['site_view']['site']['name']
-	federation_enabled = instance['site_info']['site_view']['local_site']['federation_enabled']
+    domain = instance['domain']
+    name = instance['site_info']['site_view']['site']['name']
+    federation_enabled = instance['site_info']['site_view']['local_site']['federation_enabled']
 
-	if federation_enabled == True:
-		federated_linked = instance['site_info']['federated_instances']['linked']
-		federated_allowed = instance['site_info']['federated_instances']['allowed']
-		federated_blocked = instance['site_info']['federated_instances']['blocked']
-	else:
-		federated_linked = None
-		federated_allowed = None
-		federated_blocked = None
+    if federation_enabled == True:
+        federated_linked = instance['site_info']['federated_instances']['linked']
+        federated_allowed = instance['site_info']['federated_instances']['allowed']
+        federated_blocked = instance['site_info']['federated_instances']['blocked']
+    else:
+        federated_linked = None
+        federated_allowed = None
+        federated_blocked = None
 
-	registration_mode = instance['site_info']['site_view']['local_site']['registration_mode']
-	slur_filter = instance['site_info']['site_view']['local_site']['slur_filter_regex']
-	community_creation_admin_only = instance['site_info']['site_view']['local_site']['community_creation_admin_only']
-	enable_downvotes = instance['site_info']['site_view']['local_site']['enable_downvotes']
-	enable_nsfw = instance['site_info']['site_view']['local_site']['enable_nsfw']
-	users_month = instance['site_info']['site_view']['counts']['users_active_month']
-	registration_mode = instance['site_info']['site_view']['local_site']['registration_mode']
+    registration_mode = instance['site_info']['site_view']['local_site']['registration_mode']
+    slur_filter = instance['site_info']['site_view']['local_site']['slur_filter_regex']
+    community_creation_admin_only = instance['site_info']['site_view']['local_site']['community_creation_admin_only']
+    enable_downvotes = instance['site_info']['site_view']['local_site']['enable_downvotes']
+    enable_nsfw = instance['site_info']['site_view']['local_site']['enable_nsfw']
+    users_month = instance['site_info']['site_view']['counts']['users_active_month']
+    registration_mode = instance['site_info']['site_view']['local_site']['registration_mode']
 
-	#print( instance['site_info']['site_view'] )
+    #print( instance['site_info']['site_view'] )
 
-	# is this instance adult-friendly?
-	if slur_filter != None or enable_nsfw != True:
-		adult = 'No'
-	else:
-		adult = 'Yes'
+    # is this instance adult-friendly?
+    if slur_filter != None or enable_nsfw != True:
+        adult = 'No'
+    else:
+        adult = 'Yes'
 
-	if community_creation_admin_only == True:
-		new_comm = "No"
-	else:
-		new_comm = "Yes"
+    if community_creation_admin_only == True:
+        new_comm = "No"
+    else:
+        new_comm = "Yes"
 
-	if federation_enabled == False or federated_allowed != None:
-		fed = 'No'
-	else:
-		fed = "Yes"
+    if federation_enabled == False or federated_allowed != None:
+        fed = 'No'
+    else:
+        fed = "Yes"
 
-	if enable_downvotes == True:
-		downvotes = "Yes"
-	else:
-		downvotes = "No"
+    if enable_downvotes == True:
+        downvotes = "Yes"
+    else:
+        downvotes = "No"
 
-	if registration_mode == "closed":
-		new_users = "No"
-	else:
-		new_users = "Yes"
+    if registration_mode == "closed":
+        new_users = "No"
+    else:
+        new_users = "Yes"
 
-	csv_contents += "[" +name+ "](https://" +domain+ "),"
-	csv_contents += new_users+ ","
-	csv_contents += new_comm+ ","
-	csv_contents += fed+ ","
-	csv_contents += adult+ ","
-	csv_contents += downvotes+ ","
-	csv_contents += str(users_month)
-	csv_contents += "\n"
+    csv_contents += "[" +name+ "](https://" +domain+ "),"
+    csv_contents += new_users+ ","
+    csv_contents += new_comm+ ","
+    csv_contents += fed+ ","
+    csv_contents += adult+ ","
+    csv_contents += downvotes+ ","
+    csv_contents += str(users_month)
+    csv_contents += "\n"
 
 # write the instance data table to the csv file
 with open( "awesome-lemmy-instances.csv", "w" ) as csv_file:
-	csv_file.write( csv_contents )
+    csv_file.write( csv_contents )
 
 # convert csv file data to markdown table
 df = pd.read_csv( "awesome-lemmy-instances.csv" )
@@ -186,4 +186,4 @@ You may want to also checkout the following websites for more information about 
 """
 
 with open( "README.md", "w" ) as readme_file:
-	readme_file.write( readme_contents )
+    readme_file.write( readme_contents )
