@@ -177,8 +177,9 @@ You may want to also checkout the following websites for more information about 
 
  * [Official Lemmy Documentation](https://join-lemmy.org/docs/en/index.html)
  * [Lemmy Map](https://lemmymap.feddit.de) - Data visualization of lemmy instances
- * [The Federation Info](https://https://the-federation.info/platform/73) - Another table comparing lemmy instances
+ * [The Federation Info](https://the-federation.info/platform/73) - Another table comparing lemmy instances (with pretty charts)
  * [Federation Observer](https://lemmy.fediverse.observer/list) - Yet another table comparing lemmy instances
+ * [FediDB](https://fedidb.org/software/lemmy) - Yet another site comparing lemmy instances (with pretty charts)
  * [Lemmy Sourcecode](https://github.com/LemmyNet/lemmy)
  * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
