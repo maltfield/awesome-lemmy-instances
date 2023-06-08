@@ -22,15 +22,16 @@ However, each server has their own local policies and configurations (for exampl
  * **↓vote** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
 
-Download table as [awesome-lemmy-instances.csv](awesome-lemmy-instances.csv) file
-|                                           | Instance   | NU   | NC                                                           | Fed   | Adult   |   ↓vote |   Users |
-|:------------------------------------------|:-----------|:-----|:-------------------------------------------------------------|:------|:--------|--------:|--------:|
-| [Lemmy](https://lemmy.ml)                 | Yes        | Yes  | Yes                                                          | No    | Yes     |    1573 |     nan |
-| [Beehaw](https://beehaw.org)              | Yes        | No   | Yes                                                          | Yes   | No      |    1011 |     nan |
-| [Feddit](https://feddit.de)               | Yes        | Yes  | Yes                                                          | Yes   | Yes     |     317 |     nan |
-| [Lemmygrad](https://lemmygrad.ml)         | Yes        | Yes  | Yes                                                          | No    | Yes     |     312 |     nan |
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes        | Yes  | Yes                                                          | Yes   | No      |      44 |     nan |
-| [Baraza](https://baraza.africa)           | Yes        | Yes  | <span style="background-color: red; color: white;">No</span> | Yes   | Yes     |       1 |     nan |
+Download table as [awesome-lemmy-instances.csv](https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv) file
+Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank">awesome-lemmy-instances.csv</a> file
+|    | Instance                                  | NU   | NC   | Fed                                                          | Adult   | ↓vote   |   Users |
+|---:|:------------------------------------------|:-----|:-----|:-------------------------------------------------------------|:--------|:--------|--------:|
+|  0 | [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes                                                          | No      | Yes     |    1573 |
+|  1 | [Beehaw](https://beehaw.org)              | Yes  | No   | Yes                                                          | Yes     | No      |    1011 |
+|  2 | [Feddit](https://feddit.de)               | Yes  | Yes  | Yes                                                          | Yes     | Yes     |     317 |
+|  3 | [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes                                                          | No      | Yes     |     312 |
+|  4 | [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes  | Yes  | Yes                                                          | Yes     | No      |      44 |
+|  5 | [Baraza](https://baraza.africa)           | Yes  | Yes  | <span style="background-color: red; color: white;">No</span> | Yes     | Yes     |       1 |
 # What's next?
 
 ## Subscribe to ~~Subreddits~~ Communities
