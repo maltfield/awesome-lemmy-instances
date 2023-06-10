@@ -21,19 +21,51 @@ However, each server has their own local policies and configurations (for exampl
  * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed. Note: "Yes" does not mean all NSFW content is allowed. Each instance may block some types of NSFW content, such as pornography. Additionally, you can configure your account to hide NSFW content. 
  * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
+ * **Uptime** Percent of time that the server is online
 
 Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
 
-| Instance                                  | NU   | NC   | Fed   | Adult   | ↓V   |   Users |
-|:------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|
-| [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |    1653 |
-| [Beehaw](https://beehaw.org)              | Yes  | No   | Yes   | Yes     | No   |    1011 |
-| [Feddit](https://feddit.de)               | Yes  | Yes  | Yes   | Yes     | Yes  |     340 |
-| [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes   | No      | Yes  |     316 |
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes  | Yes  | Yes   | Yes     | No   |      48 |
-| [Baraza](https://baraza.africa)           | Yes  | Yes  | No    | Yes     | Yes  |       1 |
+| Instance                                                | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:--------------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Lemmy](https://lemmy.ml)                               | Yes  | Yes  | Yes   | No      | Yes  |    1405 | 99%  |
+| [Beehaw](https://beehaw.org)                            | Yes  | No   | Yes   | Yes     | No   |     701 | 98%  |
+| [Lemmygrad](https://lemmygrad.ml)                       | Yes  | Yes  | Yes   | No      | Yes  |     301 | 99%  |
+| [Feddit](https://feddit.de)                             | Yes  | Yes  | Yes   | Yes     | Yes  |     278 | 100% |
+| [Sopuli](https://sopuli.xyz)                            | Yes  | Yes  | Yes   | Yes     | Yes  |     139 | 93%  |
+| [midwest.social](https://midwest.social)                | Yes  | Yes  | Yes   | Yes     | Yes  |     102 | 99%  |
+| [Lemmy.ca](https://lemmy.ca)                            | Yes  | Yes  | Yes   | Yes     | Yes  |      78 | 99%  |
+| [Feddit.it](https://feddit.it)                          | Yes  | No   | Yes   | Yes     | Yes  |      63 | 100% |
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone)               | Yes  | Yes  | Yes   | Yes     | No   |      33 | 99%  |
+| [SLRPNK](https://slrpnk.net)                            | Yes  | Yes  | Yes   | No      | No   |      22 | 99%  |
+| [Lemmy.eus](https://lemmy.eus)                          | Yes  | Yes  | Yes   | Yes     | Yes  |      10 | 98%  |
+| [Mander](https://mander.xyz)                            | Yes  | Yes  | Yes   | Yes     | Yes  |       8 | 82%  |
+| [PerthChat](https://lemmy.perthchat.org)                | Yes  | Yes  | Yes   | Yes     | No   |       7 | 99%  |
+| [Lemmy Portugal 🇵🇹](https://lemmy.pt)                   | Yes  | No   | Yes   | No      | Yes  |       7 | 96%  |
+| [Internet burnout](https://group.lt)                    | Yes  | Yes  | Yes   | Yes     | Yes  |       5 | 100% |
+| [Baomi.TV](https://baomi.tv)                            | Yes  | Yes  | No    | Yes     | Yes  |       5 | 99%  |
+| [九尾社群](https://bbs.9tail.net)                           | Yes  | Yes  | No    | Yes     | Yes  |       4 | 96%  |
+| [鴉は拠り所について語り合う](https://lm.korako.me)                   | No   | Yes  | Yes   | Yes     | Yes  |       3 | 100% |
+| [XMPP Community](https://community.xmpp.net)            | Yes  | No   | Yes   | No      | No   |       2 | 99%  |
+| [Stammtisch](https://stammtisch.hallertau.social)       | Yes  | Yes  | No    | Yes     | Yes  |       1 | 99%  |
+| [Privacy Community](https://community.nicfab.it)        | Yes  | No   | No    | Yes     | Yes  |       1 | 100% |
+| [RollenspielMonster](https://lemmy.rollenspiel.monster) | Yes  | Yes  | Yes   | Yes     | Yes  |       1 | 100% |
+| [Baraza](https://baraza.africa)                         | Yes  | Yes  | No    | Yes     | Yes  |       1 | 99%  |
+| [0xDD](https://0xdd.org.ru)                             | Yes  | No   | Yes   | No      | Yes  |       1 | 100% |
+| [Linkage @ DS8](https://linkage.ds8.zone)               | Yes  | Yes  | Yes   | Yes     | Yes  |       1 | 99%  |
+| [Max's donky farm](https://donky.social)                | Yes  | Yes  | Yes   | Yes     | Yes  |       1 | 0%   |
+| [Lemmy Coupou.fr](https://lemmy.coupou.fr)              | No   | Yes  | Yes   | Yes     | Yes  |       1 | 100% |
+| [foros.fediverso.gal](https://foros.fediverso.gal)      | Yes  | No   | Yes   | No      | Yes  |       1 | 88%  |
+| [rimkus-corner](https://lemmy.rimkus.it)                | Yes  | Yes  | Yes   | Yes     | Yes  |       1 | 95%  |
+| [lemmy.schuerz.at](https://lemmy.schuerz.at)            | Yes  | No   | Yes   | Yes     | Yes  |       1 | 100% |
+| [Toot!](https://lemmy.toot.pt)                          | Yes  | Yes  | Yes   | Yes     | Yes  |       0 | 100% |
+| [bolha.social (beta)](https://bolha.social)             | Yes  | No   | Yes   | Yes     | Yes  |       0 | 99%  |
+| [fediBB](https://fedibb.ml)                             | Yes  | No   | Yes   | No      | Yes  |       0 | 99%  |
+| [Lemmy](https://lemmy.services.coupou.fr)               | No   | Yes  | Yes   | Yes     | Yes  |       0 | 99%  |
+| [Helvetet](https://lemmy.helvetet.eu)                   | Yes  | Yes  | Yes   | No      | Yes  |       0 | 99%  |
+| [Clueware's lemmy](https://lemmy.clueware.org)          | No   | Yes  | Yes   | Yes     | Yes  |       0 | ??   |
+| [Lemmy graz.social](https://lemmy.graz.social)          | Yes  | Yes  | Yes   | No      | No   |       0 | 100% |
 
 # What's next?
 
@@ -51,8 +83,9 @@ You may want to also checkout the following websites for more information about 
 
  * [Official Lemmy Documentation](https://join-lemmy.org/docs/en/index.html)
  * [Lemmy Map](https://lemmymap.feddit.de) - Data visualization of lemmy instances
- * [The Federation Info](https://https://the-federation.info/platform/73) - Another table comparing lemmy instances
+ * [The Federation Info](https://the-federation.info/platform/73) - Another table comparing lemmy instances (with pretty charts)
  * [Federation Observer](https://lemmy.fediverse.observer/list) - Yet another table comparing lemmy instances
+ * [FediDB](https://fedidb.org/software/lemmy) - Yet another site comparing lemmy instances (with pretty charts)
  * [Lemmy Sourcecode](https://github.com/LemmyNet/lemmy)
  * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
