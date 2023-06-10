@@ -22,6 +22,8 @@ import pandas as pd
 LEMMY_STATS_CRAWLER_FILENAME = 'lemmy-stats-crawler.json'
 LEMMY_STATS_CRAWLER_FILEPATH = 'lemmy-stats-crawler/' + LEMMY_STATS_CRAWLER_FILENAME
 
+UPTIME_FILENAME = 'uptime.json'
+
 ################################################################################
 #                                  FUNCTIONS                                   #
 ################################################################################
@@ -65,13 +67,14 @@ However, each server has their own local policies and configurations (for exampl
  * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed. Note: "Yes" does not mean all NSFW content is allowed. Each instance may block some types of NSFW content, such as pornography. Additionally, you can configure your account to hide NSFW content. 
  * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
+ * **UT** Percent **UpTime** that the server has been online
 
 Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
 '''
 
-csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users\n"
+csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,UT\n"
 
 ################
 # PROCESS JSON #
@@ -85,6 +88,9 @@ print( os.listdir('lemmy-stats-crawler') )
 
 with open( LEMMY_STATS_CRAWLER_FILEPATH ) as json_data:
 	data = json.load(json_data)
+
+with open( UPTIME_FILENAME ) as json_data:
+	uptime_data = json.load(json_data)
 
 for instance in data['instance_details']:
 
@@ -137,13 +143,30 @@ for instance in data['instance_details']:
 	else:
 		new_users = "Yes"
 
+	# stupid way to say gimmie the 'uptime_alltime' data from the json where
+	# the 'domain' matches this iteration lemmy instance's domain
+	uptime = [x['uptime_alltime'] for x in uptime_data['data']['nodes'] if x['domain'] == domain]
+
+	# did we figure out an uptime for this domain?
+	if uptime == []:
+		# we couldn't find an uptime; set it to '??'
+		uptime = '??'
+	else:
+		# we got an uptime! Format it for the table
+
+		uptime = uptime[0]
+		# let's keep the data simple
+		uptime = round(float(uptime))
+		uptime = str(uptime)+ "%"
+
 	csv_contents += "[" +name+ "](https://" +domain+ "),"
 	csv_contents += new_users+ ","
 	csv_contents += new_comm+ ","
 	csv_contents += fed+ ","
 	csv_contents += adult+ ","
 	csv_contents += downvotes+ ","
-	csv_contents += str(users_month)
+	csv_contents += str(users_month)+ ','
+	csv_contents += str(uptime)
 	csv_contents += "\n"
 
 # write the instance data table to the csv file
@@ -177,8 +200,9 @@ You may want to also checkout the following websites for more information about 
 
  * [Official Lemmy Documentation](https://join-lemmy.org/docs/en/index.html)
  * [Lemmy Map](https://lemmymap.feddit.de) - Data visualization of lemmy instances
- * [The Federation Info](https://https://the-federation.info/platform/73) - Another table comparing lemmy instances
+ * [The Federation Info](https://the-federation.info/platform/73) - Another table comparing lemmy instances (with pretty charts)
  * [Federation Observer](https://lemmy.fediverse.observer/list) - Yet another table comparing lemmy instances
+ * [FediDB](https://fedidb.org/software/lemmy) - Yet another site comparing lemmy instances (with pretty charts)
  * [Lemmy Sourcecode](https://github.com/LemmyNet/lemmy)
  * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)

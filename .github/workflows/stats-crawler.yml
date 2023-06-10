@@ -27,8 +27,11 @@ jobs:
         # install depends
         sudo apt-get install python3-pandas  python3-tabulate
 
-        # first generate the lemmy-stats-crawler.json file
+        # generate the lemmy-stats-crawler.json file
         ./stats-crawler.sh
+
+        # get uptimes of lemmy instances
+        ./get-uptime.sh
 
         # process the json file and update the README.md file
         ./generate_readme.py
