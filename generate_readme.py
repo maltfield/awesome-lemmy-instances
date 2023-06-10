@@ -67,7 +67,7 @@ However, each server has their own local policies and configurations (for exampl
  * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed. Note: "Yes" does not mean all NSFW content is allowed. Each instance may block some types of NSFW content, such as pornography. Additionally, you can configure your account to hide NSFW content. 
  * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
- * **Uptime** Percent of time that the server is online
+ * **UT** Percent **UpTime** that the server has been online
 
 Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
 
