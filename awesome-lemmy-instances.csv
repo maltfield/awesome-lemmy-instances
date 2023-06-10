@@ -1,7 +1,7 @@
-Instance,NU,NC,Fed,Adult,↓V,Users
-[Lemmy](https://lemmy.ml),Yes,Yes,Yes,No,Yes,1671
-[Beehaw](https://beehaw.org),Yes,No,Yes,Yes,No,1011
-[Feddit](https://feddit.de),Yes,Yes,Yes,Yes,Yes,350
-[Lemmygrad](https://lemmygrad.ml),Yes,Yes,Yes,No,Yes,317
-[Blåhaj Lemmy](https://lemmy.blahaj.zone),Yes,Yes,Yes,Yes,No,48
-[Baraza](https://baraza.africa),Yes,Yes,No,Yes,Yes,1
+Instance,NU,NC,Fed,Adult,↓V,Users,UT
+[Lemmy](https://lemmy.ml),Yes,Yes,Yes,No,Yes,1979,99%
+[Beehaw](https://beehaw.org),Yes,No,Yes,Yes,No,1480,98%
+[Feddit](https://feddit.de),Yes,Yes,Yes,Yes,Yes,458,100%
+[Lemmygrad](https://lemmygrad.ml),Yes,Yes,Yes,No,Yes,334,99%
+[Blåhaj Lemmy](https://lemmy.blahaj.zone),Yes,Yes,Yes,Yes,No,85,99%
+[Baraza](https://baraza.africa),Yes,Yes,No,Yes,Yes,2,99%
