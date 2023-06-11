@@ -239,11 +239,9 @@ recommended_markdown_table = "\n" + recommended_markdown_table + "\n"
 readme_contents +=  """
 # Recommended Instances
 
-Lemmy is a bit different from Reddit in that it's federated (via ActivityPub). This means that, unlike reddit, there isn't a single company that has total control of the Lemmy. And it means that, like Mastodon, anyone can run their own lemmy server.
+Just pick one of the below "recommended" instances at random.
 
-So the first thing you need to do is pick a Lemmy instance where to register your account. Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
-
-Just click on a random instance in this list then click `Sign Up`.
+Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 """
 
 # add the markdown table to the readme's contents

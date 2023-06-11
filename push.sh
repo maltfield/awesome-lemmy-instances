@@ -4,4 +4,5 @@
 git pull
 git checkout --theirs README.md
 git checkout --theirs awesome-lemmy-instances.csv
+git commit -am 'merge from GitHub'
 git push
