@@ -258,6 +258,10 @@ To **find popular communities** across all lemmy instances in the fediverse, you
 
  * https://browse.feddit.de/
 
+<a href="https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/"><img src="lemmy-migration-find-subreddits-communities.jpg" alt="How To Find Lemmy Communities" /></a>
+
+For more information, see my guide on [How to Find Popular Lemmy Communities](https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/)
+
 ## Other links
 
 You may want to also checkout the following websites for more information about Lemmy
