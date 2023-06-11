@@ -31,7 +31,7 @@ Don't overthink this. **It doesn't matter which instance you use.** You'll still
 
 | Instance                    | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
 |:----------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
-| [Feddit](https://feddit.de) | Yes  | Yes  | Yes   | Yes     | Yes  |     668 | 100% |
+| [Feddit](https://feddit.de) | Yes  | Yes  | Yes   | Yes     | Yes  |     675 | 100% |
 
 # What's next?
 
@@ -69,9 +69,11 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
 
-| Instance                        | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
-|:--------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
-| [Lemmy](https://lemmy.ml)       | No   | Yes  | Yes   | No      | Yes  |    2551 | 99%  |
-| [Beehaw](https://beehaw.org)    | Yes  | No   | Yes   | Yes     | No   |    1847 | 98%  |
-| [Feddit](https://feddit.de)     | Yes  | Yes  | Yes   | Yes     | Yes  |     668 | 100% |
-| [Baraza](https://baraza.africa) | Yes  | Yes  | No    | Yes     | Yes  |       3 | 99%  |
+| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Lemmy](https://lemmy.ml)                         | Yes  | Yes  | Yes   | No      | Yes  |    2560 | 99%  |
+| [Beehaw](https://beehaw.org)                      | Yes  | No   | Yes   | Yes     | No   |    1860 | 98%  |
+| [Feddit](https://feddit.de)                       | Yes  | Yes  | Yes   | Yes     | Yes  |     675 | 100% |
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     370 | 99%  |
+| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 | 99%  |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       1 | ??   |
