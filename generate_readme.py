@@ -30,6 +30,19 @@ OUT_CSV = 'awesome-lemmy-instances.csv'
 #                                  FUNCTIONS                                   #
 ################################################################################
 
+# do some checks on text that we get back from the instance's API because it
+# might break markdown or do something nasty
+def sanitize_text( text ):
+
+	# markdown table columns are delimited by pipes
+	text = text.replace( '|', '' )
+
+	# newlines
+	text = text.replace( "\r", '' )
+	text = text.replace( "\n", '' )
+
+	return text
+
 ################################################################################
 #                                  MAIN BODY                                   #
 ################################################################################
@@ -92,8 +105,8 @@ with open( UPTIME_FILENAME ) as json_data:
 
 for instance in data['instance_details']:
 
-	domain = instance['domain']
-	name = instance['site_info']['site_view']['site']['name']
+	domain = sanitize_text( instance['domain'] )
+	name = sanitize_text( instance['site_info']['site_view']['site']['name'] )
 	federation_enabled = instance['site_info']['site_view']['local_site']['federation_enabled']
 
 	if federation_enabled == True:
