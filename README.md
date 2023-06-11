@@ -23,17 +23,17 @@ However, each server has their own local policies and configurations (for exampl
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
  * **UT** Percent **UpTime** that the server has been online
 
-Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
+# Recommended Instances
 
-> ⓘ Note To view a wider version of the table, [click here](README.md).
+Lemmy is a bit different from Reddit in that it's federated (via ActivityPub). This means that, unlike reddit, there isn't a single company that has total control of the Lemmy. And it means that, like Mastodon, anyone can run their own lemmy server.
 
-| Instance                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
-|:----------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
-| [Lemmy](https://lemmy.ml)         | Yes  | Yes  | Yes   | No      | Yes  |    1979 | 99%  |
-| [Beehaw](https://beehaw.org)      | Yes  | No   | Yes   | Yes     | No   |    1480 | 98%  |
-| [Feddit](https://feddit.de)       | Yes  | Yes  | Yes   | Yes     | Yes  |     458 | 100% |
-| [Lemmygrad](https://lemmygrad.ml) | Yes  | Yes  | Yes   | No      | Yes  |     334 | 99%  |
-| [Baraza](https://baraza.africa)   | Yes  | Yes  | No    | Yes     | Yes  |       2 | 99%  |
+So the first thing you need to do is pick a Lemmy instance where to register your account. Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
+
+Just click on a random instance in this list then click `Sign Up`.
+
+| Instance                    | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:----------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Feddit](https://feddit.de) | Yes  | Yes  | Yes   | Yes     | Yes  |     668 | 100% |
 
 # What's next?
 
@@ -58,3 +58,16 @@ You may want to also checkout the following websites for more information about 
  * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
 
+
+# All Lemmy Instances
+
+Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
+
+> ⓘ Note To view a wider version of the table, [click here](README.md).
+
+| Instance                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:----------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Beehaw](https://beehaw.org)      | Yes  | No   | Yes   | Yes     | No   |    1847 | 98%  |
+| [Feddit](https://feddit.de)       | Yes  | Yes  | Yes   | Yes     | Yes  |     668 | 100% |
+| [Lemmygrad](https://lemmygrad.ml) | Yes  | Yes  | Yes   | No      | Yes  |     369 | 99%  |
+| [Baraza](https://baraza.africa)   | Yes  | Yes  | No    | Yes     | Yes  |       3 | 99%  |
