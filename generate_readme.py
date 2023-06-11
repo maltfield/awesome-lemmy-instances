@@ -280,7 +280,7 @@ For more information, see my guide on [How to Find Popular Lemmy Communities](ht
 You may want to also checkout the following websites for more information about Lemmy
 
  * [Official Lemmy Documentation](https://join-lemmy.org/docs/en/index.html)
- * [Intro to Lemmy Guide](https://github.com/maltfield/awesome-lemmy-instances/tree/dev) - How to create a lemmy account, find, and subscribe-to popular communities
+ * [Intro to Lemmy Guide](https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/) - How to create a lemmy account, find, and subscribe-to popular communities
  * [Lemmy Community Browser](https://browse.feddit.de/) - List of all communities across all lemmy instances, sorted by popularity
  * [Lemmy Map](https://lemmymap.feddit.de) - Data visualization of lemmy instances
  * [The Federation Info](https://the-federation.info/platform/73) - Another table comparing lemmy instances (with pretty charts)

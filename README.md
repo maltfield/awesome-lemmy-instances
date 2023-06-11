@@ -29,10 +29,16 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
+<<<<<<< HEAD
 | Instance                                   | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
 |:-------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
 | [Feddit](https://feddit.de)                | Yes  | Yes  | Yes   | Yes     | Yes  |     675 | 100% |
 | [sh.itjust.works](https://sh.itjust.works) | Yes  | Yes  | Yes   | Yes     | Yes  |     450 | 100% |
+=======
+| Instance                    | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:----------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Feddit](https://feddit.de) | Yes  | Yes  | Yes   | Yes     | Yes  |     675 | 100% |
+>>>>>>> dev
 
 # What's next?
 
@@ -70,6 +76,7 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
 
+<<<<<<< HEAD
 | Instance                                                  | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
 |:----------------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
 | [Lemmy](https://lemmy.ml)                                 | No   | Yes  | Yes   | No      | Yes  |    2551 | 99%  |
@@ -436,3 +443,13 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 | [quo.ink](https://quo.ink)                                | No   | No   | Yes   | Yes     | Yes  |       0 | ??   |
 | [The knights of NIH!](https://lemmy.mpcjanssen.nl)        | No   | Yes  | No    | Yes     | Yes  |       0 | ??   |
 | [bolha.social (beta)](https://bolha.social)               | Yes  | No   | Yes   | Yes     | Yes  |       0 | 99%  |
+=======
+| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Lemmy](https://lemmy.ml)                         | Yes  | Yes  | Yes   | No      | Yes  |    2560 | 99%  |
+| [Beehaw](https://beehaw.org)                      | Yes  | No   | Yes   | Yes     | No   |    1860 | 98%  |
+| [Feddit](https://feddit.de)                       | Yes  | Yes  | Yes   | Yes     | Yes  |     675 | 100% |
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     370 | 99%  |
+| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 | 99%  |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       1 | ??   |
+>>>>>>> dev
