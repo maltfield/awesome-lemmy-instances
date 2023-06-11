@@ -21,20 +21,17 @@ However, each server has their own local policies and configurations (for exampl
  * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed. Note: "Yes" does not mean all NSFW content is allowed. Each instance may block some types of NSFW content, such as pornography. Additionally, you can configure your account to hide NSFW content. 
  * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
- * **Uptime** Percent of time that the server is online
+ * **UT** Percent **UpTime** that the server has been online
 
-Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
+# Recommended Instances
 
-> ⓘ Note To view a wider version of the table, [click here](README.md).
+Just pick one of the below "recommended" instances at random.
 
-| Instance                                  | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
-|:------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
-| [Lemmy](https://lemmy.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |    1979 | 99%  |
-| [Beehaw](https://beehaw.org)              | Yes  | No   | Yes   | Yes     | No   |    1480 | 98%  |
-| [Feddit](https://feddit.de)               | Yes  | Yes  | Yes   | Yes     | Yes  |     458 | 100% |
-| [Lemmygrad](https://lemmygrad.ml)         | Yes  | Yes  | Yes   | No      | Yes  |     334 | 99%  |
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone) | Yes  | Yes  | Yes   | Yes     | No   |      85 | 99%  |
-| [Baraza](https://baraza.africa)           | Yes  | Yes  | No    | Yes     | Yes  |       2 | 99%  |
+Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
+
+| Instance                    | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:----------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Feddit](https://feddit.de) | Yes  | Yes  | Yes   | Yes     | Yes  |     668 | 100% |
 
 # What's next?
 
@@ -45,6 +42,10 @@ After you pick an instance and register an account, you'll want to subscribe to 
 To **find popular communities** across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/) run by feddit.de.
 
  * https://browse.feddit.de/
+
+<a href="https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/"><img src="lemmy-migration-find-subreddits-communities.jpg" alt="How To Find Lemmy Communities" /></a>
+
+For more information, see my guide on [How to Find Popular Lemmy Communities](https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/)
 
 ## Other links
 
@@ -59,3 +60,17 @@ You may want to also checkout the following websites for more information about 
  * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
 
+
+# All Lemmy Instances
+
+Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
+
+> ⓘ Note To view a wider version of the table, [click here](README.md).
+
+| Instance                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:----------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Lemmy](https://lemmy.ml)         | No   | Yes  | Yes   | No      | Yes  |    2551 | 99%  |
+| [Beehaw](https://beehaw.org)      | Yes  | No   | Yes   | Yes     | No   |    1847 | 98%  |
+| [Feddit](https://feddit.de)       | Yes  | Yes  | Yes   | Yes     | Yes  |     668 | 100% |
+| [Lemmygrad](https://lemmygrad.ml) | Yes  | Yes  | Yes   | No      | Yes  |     369 | 99%  |
+| [Baraza](https://baraza.africa)   | Yes  | Yes  | No    | Yes     | Yes  |       3 | 99%  |
