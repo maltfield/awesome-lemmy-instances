@@ -239,7 +239,7 @@ recommended_markdown_table = "\n" + recommended_markdown_table + "\n"
 readme_contents +=  """
 # Recommended Instances
 
-Just pick one of the below "recommended" instances at random.
+Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 """
