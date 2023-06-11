@@ -24,6 +24,8 @@ LEMMY_STATS_CRAWLER_FILEPATH = 'lemmy-stats-crawler/' + LEMMY_STATS_CRAWLER_FILE
 
 UPTIME_FILENAME = 'uptime.json'
 
+OUT_CSV = 'awesome-lemmy-instances.csv'
+
 ################################################################################
 #                                  FUNCTIONS                                   #
 ################################################################################
@@ -68,10 +70,6 @@ However, each server has their own local policies and configurations (for exampl
  * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
  * **UT** Percent **UpTime** that the server has been online
-
-Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
-
-> ⓘ Note To view a wider version of the table, [click here](README.md).
 '''
 
 csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,UT\n"
@@ -170,18 +168,86 @@ for instance in data['instance_details']:
 	csv_contents += "\n"
 
 # write the instance data table to the csv file
-with open( "awesome-lemmy-instances.csv", "w" ) as csv_file:
+with open( OUT_CSV, "w" ) as csv_file:
+	csv_file.write( csv_contents )
+
+# shrink the list to just a few recommended instances
+import csv
+all_instances = list()
+recommended_instances = list()
+with open(OUT_CSV) as csv_file:
+
+	for instance in csv.DictReader( csv_file ):
+		all_instances.append( instance )
+
+		# only include instances that are "yes" across-the-board
+		if instance['NU'] == "Yes" \
+		 and instance['NC'] == "Yes" \
+		 and instance['Fed'] == "Yes" \
+		 and instance['Adult'] == "Yes" \
+		 and instance['↓V'] == "Yes":
+
+			recommended_instances.append( instance )
+
+# remove instances with too few or too may users
+recommended_instances = [x for x in recommended_instances if int(x['Users']) > 100 and int(x['Users']) < 1000]
+
+# limit to those with the best uptime; first we make sure that we actually
+# have the uptime data
+uptime_available = [x for x in recommended_instances if x['UT'] != '??']
+
+# do we have uptime data?
+if uptime_available != list():
+	# we have uptime data; proceed with reducing the set of recommended_instances
+	# based on uptime
+
+	# loop down from 100% to 0%
+	for percent_uptime in reversed(range(100)):
+
+		high_uptime_instances = [x for x in recommended_instances if int(x['UT'][:-1]) > percent_uptime]
+
+		# do we have more than one instance above this uptime?
+		if len(high_uptime_instances) > 0:
+			# we already have enough instances; ignore the rest with lower uptime
+			recommended_instances = high_uptime_instances
+			break
+
+# prepare data for csv file
+csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,UT\n"
+for instance in recommended_instances:
+	csv_contents += instance['Instance']+ ','
+	csv_contents += instance['NU']+ ','
+	csv_contents += instance['NC']+ ','
+	csv_contents += instance['Fed']+ ','
+	csv_contents += instance['Adult']+ ','
+	csv_contents += instance['↓V']+ ','
+	csv_contents += instance['Users']+ ','
+	csv_contents += instance['UT']
+	csv_contents += "\n"
+
+# write the recommended instance data table to a csv file
+with open( 'recommended-instances.csv', "w" ) as csv_file:
 	csv_file.write( csv_contents )
 
 # convert csv file data to markdown table
-df = pd.read_csv( "awesome-lemmy-instances.csv" )
-markdown_table = df.to_markdown( tablefmt='pipe', index = False )
+df = pd.read_csv( 'recommended-instances.csv' )
+recommended_markdown_table = df.to_markdown( tablefmt='pipe', index = False )
 
 # add newline to protect the table from getting klobbered by the text around it
-markdown_table = "\n" + markdown_table + "\n"
+recommended_markdown_table = "\n" + recommended_markdown_table + "\n"
+
+readme_contents +=  """
+# Recommended Instances
+
+Lemmy is a bit different from Reddit in that it's federated (via ActivityPub). This means that, unlike reddit, there isn't a single company that has total control of the Lemmy. And it means that, like Mastodon, anyone can run their own lemmy server.
+
+So the first thing you need to do is pick a Lemmy instance where to register your account. Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
+
+Just click on a random instance in this list then click `Sign Up`.
+"""
 
 # add the markdown table to the readme's contents
-readme_contents += markdown_table
+readme_contents += recommended_markdown_table
 
 readme_contents +=  """
 # What's next?
@@ -208,6 +274,25 @@ You may want to also checkout the following websites for more information about 
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
 
 """
+
+# convert csv file data to markdown table
+df = pd.read_csv( OUT_CSV )
+markdown_table = df.to_markdown( tablefmt='pipe', index = False )
+
+# add newline to protect the table from getting klobbered by the text around it
+markdown_table = "\n" + markdown_table + "\n"
+
+readme_contents +=  """
+# All Lemmy Instances
+
+Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-lemmy-instances/main/awesome-lemmy-instances.csv" target="_blank" download>awesome-lemmy-instances.csv</a> file
+
+> ⓘ Note To view a wider version of the table, [click here](README.md).
+"""
+
+# add the markdown table to the readme's contents
+readme_contents += markdown_table
+
 
 with open( "README.md", "w" ) as readme_file:
 	readme_file.write( readme_contents )
