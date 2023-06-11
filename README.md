@@ -25,11 +25,9 @@ However, each server has their own local policies and configurations (for exampl
 
 # Recommended Instances
 
-Lemmy is a bit different from Reddit in that it's federated (via ActivityPub). This means that, unlike reddit, there isn't a single company that has total control of the Lemmy. And it means that, like Mastodon, anyone can run their own lemmy server.
+Just pick one of the below "recommended" instances at random.
 
-So the first thing you need to do is pick a Lemmy instance where to register your account. Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
-
-Just click on a random instance in this list then click `Sign Up`.
+Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
 | Instance                    | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
 |:----------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
@@ -44,6 +42,10 @@ After you pick an instance and register an account, you'll want to subscribe to 
 To **find popular communities** across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/) run by feddit.de.
 
  * https://browse.feddit.de/
+
+<a href="https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/"><img src="lemmy-migration-find-subreddits-communities.jpg" alt="How To Find Lemmy Communities" /></a>
+
+For more information, see my guide on [How to Find Popular Lemmy Communities](https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/)
 
 ## Other links
 
@@ -67,6 +69,7 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 | Instance                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
 |:----------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [Lemmy](https://lemmy.ml)         | No   | Yes  | Yes   | No      | Yes  |    2551 | 99%  |
 | [Beehaw](https://beehaw.org)      | Yes  | No   | Yes   | Yes     | No   |    1847 | 98%  |
 | [Feddit](https://feddit.de)       | Yes  | Yes  | Yes   | Yes     | Yes  |     668 | 100% |
 | [Lemmygrad](https://lemmygrad.ml) | Yes  | Yes  | Yes   | No      | Yes  |     369 | 99%  |
