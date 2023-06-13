@@ -12,7 +12,7 @@
 #                                   IMPORTS                                    #
 ################################################################################
 
-import json
+import json, csv, numpy
 import pandas as pd
 
 ################################################################################
@@ -199,8 +199,11 @@ for instance in data['instance_details']:
 with open( OUT_CSV, "w" ) as csv_file:
 	csv_file.write( csv_contents )
 
+#########################
+# RECOMMENDED INSTANCES #
+#########################
+
 # shrink the list to just a few recommended instances
-import csv
 all_instances = list()
 recommended_instances = list()
 with open(OUT_CSV) as csv_file:
@@ -219,6 +222,19 @@ with open(OUT_CSV) as csv_file:
 
 # remove instances with too few or too may users
 recommended_instances = [x for x in recommended_instances if int(x['Users']) > 60 and int(x['Users']) < 1000]
+
+# get a lits of all the instances that have more than 1 blocked instance and
+# then get the average number of instances that are blocked
+bi_list = [ int(x['BI']) for x in all_instances if int(x['BI']) > 1 ]
+bi_avg = numpy.average( bi_list )
+
+# get a lits of all the instances that are blocked by more than 1 instance and
+# then get the average number of that instances are are blocked
+bb_list = [ int(x['BB']) for x in all_instances if int(x['BB']) > 1 ]
+bb_avg = numpy.average( bb_list )
+
+# remove instances that are blocking or blocked-by too many other instancesk
+recommended_instances = [ x for x in recommended_instances if int(x['BI']) < bi_avg and int(x['BB']) < bb_avg ]
 
 # limit to those with the best uptime; first we make sure that we actually
 # have the uptime data
@@ -308,6 +324,10 @@ You may want to also checkout the following websites for more information about 
  * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
 
 """
+
+#################
+# ALL INSTANCES #
+#################
 
 # convert csv file data to markdown table
 df = pd.read_csv( OUT_CSV )
