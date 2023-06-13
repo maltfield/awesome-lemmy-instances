@@ -203,7 +203,7 @@ with open(OUT_CSV) as csv_file:
 			recommended_instances.append( instance )
 
 # remove instances with too few or too may users
-recommended_instances = [x for x in recommended_instances if int(x['Users']) > 100 and int(x['Users']) < 1000]
+recommended_instances = [x for x in recommended_instances if int(x['Users']) > 60 and int(x['Users']) < 1000]
 
 # limit to those with the best uptime; first we make sure that we actually
 # have the uptime data
@@ -220,7 +220,7 @@ if uptime_available != list():
 		high_uptime_instances = [x for x in recommended_instances if int(x['UT'][:-1]) > percent_uptime]
 
 		# do we have more than one instance above this uptime?
-		if len(high_uptime_instances) > 0:
+		if len(high_uptime_instances) > 1:
 			# we already have enough instances; ignore the rest with lower uptime
 			recommended_instances = high_uptime_instances
 			break
