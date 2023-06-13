@@ -8,7 +8,7 @@ set -x
 # get the current branch of the 'awesome-lemmy-instances' repo
 current_branch=$(git branch --show-current)
 
-crawl_list="baraza.africa,lemmy.ml,beehaw.org,lemmygrad.ml,feddit.de,lemmy.blahaj.zone,lemmy.pussthecat.org"
+crawl_list="baraza.africa,lemmygrad.ml,lemmy.blahaj.zone,lemmy.pussthecat.org,lemmy.studio,toast.ooo,iusearchlinux.fyi,waveform.social,monero.town,exploding-heads.com,reddthat.com,mander.xyz,vlemmy.net,szmer.info"
 
 #############
 # FUNCTIONS #
