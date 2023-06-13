@@ -21,6 +21,8 @@ However, each server has their own local policies and configurations (for exampl
  * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed. Note: "Yes" does not mean all NSFW content is allowed. Each instance may block some types of NSFW content, such as pornography. Additionally, you can configure your account to hide NSFW content. 
  * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
+ * **BI** The number of instances that this instances is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
+ * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **UT** Percent **UpTime** that the server has been online
 
 # Recommended Instances
@@ -29,10 +31,10 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
-| Instance                     | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
-|:-----------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
-| [VLemmy](https://vlemmy.net) | Yes  | Yes  | Yes   | Yes     | Yes  |      66 | 100% |
-| [szmer](https://szmer.info)  | Yes  | Yes  | Yes   | Yes     | Yes  |      61 | 99%  |
+| Instance                     | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   |
+|:-----------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|
+| [VLemmy](https://vlemmy.net) | Yes  | Yes  | Yes   | Yes     | Yes  |     107 |    0 |    0 | 100% |
+| [szmer](https://szmer.info)  | Yes  | Yes  | Yes   | Yes     | Yes  |      69 |    1 |    0 | 99%  |
 
 # What's next?
 
@@ -70,19 +72,19 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
 
-| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
-|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     421 | 99%  |
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     304 | 98%  |
-| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |      66 | 100% |
-| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |      61 | 99%  |
-| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |      61 | 82%  |
-| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |      55 | 100% |
-| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      39 | 100% |
-| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      29 | 100% |
-| [I use arch linux FYI](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      26 | 98%  |
-| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      15 | 100% |
-| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      12 | 100% |
-| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |       4 | ??   |
-| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 | 99%  |
-| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 | ??   |
+| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   |
+|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     440 |   40 |    2 | 99%  |
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     383 |    4 |    0 | 98%  |
+| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     107 |    0 |    0 | 100% |
+| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |      69 |    1 |    0 | 99%  |
+| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |      65 |    0 |    0 | 82%  |
+| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |      55 |    1 |    0 | 100% |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      43 |    1 |    2 | 100% |
+| [I use arch linux FYI](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      34 |    0 |    0 | 99%  |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      34 |    0 |    0 | 97%  |
+| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      20 |    0 |    0 | 100% |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      19 |    0 |    0 | 100% |
+| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      14 |    2 |    0 | 100% |
+| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 |    0 |    0 | 99%  |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   |
