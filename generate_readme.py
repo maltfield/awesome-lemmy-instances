@@ -82,10 +82,12 @@ However, each server has their own local policies and configurations (for exampl
  * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed. Note: "Yes" does not mean all NSFW content is allowed. Each instance may block some types of NSFW content, such as pornography. Additionally, you can configure your account to hide NSFW content. 
  * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
+ * **BI** The number of instances that this instances is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
+ * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **UT** Percent **UpTime** that the server has been online
 '''
 
-csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,UT\n"
+csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT\n"
 
 ################
 # PROCESS JSON #
@@ -99,6 +101,8 @@ print( os.listdir('lemmy-stats-crawler') )
 
 with open( LEMMY_STATS_CRAWLER_FILEPATH ) as json_data:
 	data = json.load(json_data)
+
+instances_with_blocked = [x for x in data['instance_details'] if x['site_info']['federated_instances'] != None ]
 
 with open( UPTIME_FILENAME ) as json_data:
 	uptime_data = json.load(json_data)
@@ -126,7 +130,16 @@ for instance in data['instance_details']:
 	users_month = instance['site_info']['site_view']['counts']['users_active_month']
 	registration_mode = instance['site_info']['site_view']['local_site']['registration_mode']
 
-	#print( instance['site_info']['site_view'] )
+	# count the number of instances that block this instance
+	blocked_by = len([x for x in instances_with_blocked if x['site_info']['federated_instances']['blocked'] != None and domain in x['site_info']['federated_instances']['blocked'] ])
+
+	# count the number of instances that this instance blocks
+	if instance['site_info']['federated_instances'] == None:
+		blocking = 0
+	elif instance['site_info']['federated_instances']['blocked'] == None:
+		blocking = 0
+	else:
+		blocking = len(instance['site_info']['federated_instances']['blocked'])
 
 	# is this instance adult-friendly?
 	if slur_filter != None or enable_nsfw != True:
@@ -177,6 +190,8 @@ for instance in data['instance_details']:
 	csv_contents += adult+ ","
 	csv_contents += downvotes+ ","
 	csv_contents += str(users_month)+ ','
+	csv_contents += str(blocking)+ ','
+	csv_contents += str(blocked_by)+ ','
 	csv_contents += str(uptime)
 	csv_contents += "\n"
 
@@ -226,7 +241,7 @@ if uptime_available != list():
 			break
 
 # prepare data for csv file
-csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,UT\n"
+csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT\n"
 for instance in recommended_instances:
 	csv_contents += instance['Instance']+ ','
 	csv_contents += instance['NU']+ ','
@@ -235,6 +250,8 @@ for instance in recommended_instances:
 	csv_contents += instance['Adult']+ ','
 	csv_contents += instance['↓V']+ ','
 	csv_contents += instance['Users']+ ','
+	csv_contents += instance['BI']+ ','
+	csv_contents += instance['BB']+ ','
 	csv_contents += instance['UT']
 	csv_contents += "\n"
 
