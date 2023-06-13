@@ -29,8 +29,10 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
-| Instance   | NU   | NC   | Fed   | Adult   | ↓V   | Users   | UT   |
-|------------|------|------|-------|---------|------|---------|------|
+| Instance                     | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
+|:-----------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
+| [VLemmy](https://vlemmy.net) | Yes  | Yes  | Yes   | Yes     | Yes  |      66 | 100% |
+| [szmer](https://szmer.info)  | Yes  | Yes  | Yes   | Yes     | Yes  |      61 | 99%  |
 
 # What's next?
 
@@ -70,10 +72,17 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 | Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users | UT   |
 |:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|:-----|
-| [Lemmy](https://lemmy.ml)                         | No   | Yes  | Yes   | No      | Yes  |    2889 | 99%  |
-| [Beehaw](https://beehaw.org)                      | Yes  | No   | Yes   | Yes     | No   |    2167 | 98%  |
-| [Feddit](https://feddit.de)                       | Yes  | Yes  | Yes   | Yes     | Yes  |    1004 | 100% |
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     419 | 99%  |
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     296 | 98%  |
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     421 | 99%  |
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     304 | 98%  |
+| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |      66 | 100% |
+| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |      61 | 99%  |
+| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |      61 | 82%  |
+| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |      55 | 100% |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      39 | 100% |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      29 | 100% |
+| [I use arch linux FYI](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      26 | 98%  |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      15 | 100% |
+| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      12 | 100% |
+| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |       4 | ??   |
 | [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 | 99%  |
 | [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 | ??   |
