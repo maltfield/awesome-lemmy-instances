@@ -15,7 +15,6 @@ However, each server has their own local policies and configurations (for exampl
 
 ### Legend
 
- * **Version** The version of Lemmy this server is running.
  * **NU** "Yes" means that **New Users** can register accounts. "No" means that this instance is not accepting new account registrations at this time.
  * **NC** "Yes" means that you can create a **New Community**. "No" means that only admins can create new communities on this instance.
  * **Fed** "Yes" means that you can interact with other **federated** lemmy instances. "No" means that the instance is partially or fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
@@ -25,6 +24,7 @@ However, each server has their own local policies and configurations (for exampl
  * **BI** The number of instances that this instance is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **UT** Percent **UpTime** that the server has been online
+ * **Version** The version of Lemmy this instance is running.
 
 # Recommended Instances
 
@@ -32,10 +32,8 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
-| Instance                     | Version   | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   |
-|:-----------------------------|:----------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|
-| [VLemmy](https://vlemmy.net) | 0.17.4    | Yes  | Yes  | Yes   | Yes     | Yes  |     175 |    0 |    0 | 100% |
-| [szmer](https://szmer.info)  | 0.17.3    | Yes  | Yes  | Yes   | Yes     | Yes  |      80 |    1 |    0 | 99%  |
+| Instance   | NU   | NC   | Fed   | Adult   | ↓V   | Users   | BI   | BB   | UT   | Version   |
+|------------|------|------|-------|---------|------|---------|------|------|------|-----------|
 
 # What's next?
 
@@ -73,19 +71,18 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
 
-| Instance                                          | Version     | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   |
-|:--------------------------------------------------|:------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | 0.17.2-kt.1 | Yes  | Yes  | Yes   | Yes     | No   |     572 |    4 |    0 | 98%  |
-| [Lemmygrad](https://lemmygrad.ml)                 | 0.17.4      | Yes  | Yes  | Yes   | No      | Yes  |     514 |   42 |    1 | 99%  |
-| [VLemmy](https://vlemmy.net)                      | 0.17.4      | Yes  | Yes  | Yes   | Yes     | Yes  |     175 |    0 |    0 | 100% |
-| [Reddthat](https://reddthat.com)                  | 0.17.4      | Yes  | Yes  | Yes   | Yes     | No   |      81 |    0 |    1 | 100% |
-| [szmer](https://szmer.info)                       | 0.17.3      | Yes  | Yes  | Yes   | Yes     | Yes  |      80 |    1 |    0 | 99%  |
-| [Mander](https://mander.xyz)                      | 0.17.4      | Yes  | Yes  | Yes   | Yes     | Yes  |      65 |    0 |    0 | 82%  |
-| [waveform.social](https://waveform.social)        | 0.17.3      | Yes  | Yes  | Yes   | Yes     | Yes  |      59 |    0 |    0 | 99%  |
-| [Exploding Heads](https://exploding-heads.com)    | 0.17.3      | Yes  | Yes  | Yes   | Yes     | No   |      57 |    1 |    2 | 100% |
-| [I use arch linux FYI](https://iusearchlinux.fyi) | 0.17.4      | Yes  | Yes  | Yes   | Yes     | Yes  |      46 |    0 |    0 | 97%  |
-| [monero.town](https://monero.town)                | 0.17.4      | Yes  | Yes  | Yes   | Yes     | Yes  |      36 |    0 |    0 | 100% |
-| [toast.ooo](https://toast.ooo)                    | 0.17.4      | Yes  | Yes  | Yes   | Yes     | Yes  |      23 |    0 |    0 | 100% |
-| [lemmy.studio](https://lemmy.studio)              | 0.17.3      | Yes  | Yes  | Yes   | Yes     | Yes  |      20 |    2 |    0 | 100% |
-| [Baraza](https://baraza.africa)                   | 0.17.2      | Yes  | Yes  | No    | Yes     | Yes  |       3 |    0 |    0 | 99%  |
-| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | 0.17.3      | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   |
+| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version     |
+|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:------------|
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     572 |    4 |    0 | 98%  | 0.17.2-kt.1 |
+| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     175 |    0 |    0 | 100% | 0.17.4      |
+| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |      81 |    0 |    0 | 100% | 0.17.4      |
+| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |      80 |    1 |    0 | 99%  | 0.17.3      |
+| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |      65 |    0 |    0 | 82%  | 0.17.4      |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      59 |    0 |    0 | 99%  | 0.17.3      |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | No   |      57 |    1 |    1 | 100% | 0.17.3      |
+| [I use arch linux FYI](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      46 |    0 |    0 | 97%  | 0.17.4      |
+| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      36 |    0 |    0 | 100% | 0.17.4      |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      23 |    0 |    0 | 100% | 0.17.4      |
+| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      20 |    2 |    0 | 100% | 0.17.3      |
+| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 |    0 |    0 | 99%  | 0.17.2      |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.17.3      |
