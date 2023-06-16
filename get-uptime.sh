@@ -36,7 +36,7 @@ curl 'https://api.fediverse.observer/' -X POST -H 'Accept: */*' -H 'Accept-Langu
 ls -lah
 du -sh *
 wc -l "${OUTPUT_FILE}"
-head "${OUTPUT_FILE}"
-tail "${OUTPUT_FILE}"
+head --bytes 1024 "${OUTPUT_FILE}"
+tail --bytes 1024 "${OUTPUT_FILE}"
 
 exit 0
