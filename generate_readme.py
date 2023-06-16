@@ -85,7 +85,7 @@ However, each server has their own local policies and configurations (for exampl
  * **BI** The number of instances that this instance is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **UT** Percent **UpTime** that the server has been online
- * **Version** The version of Lemmy this server is running.
+ * **Version** The version of Lemmy this instance is running.
 '''
 
 csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,Version\n"
