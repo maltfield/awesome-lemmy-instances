@@ -228,13 +228,19 @@ recommended_instances = [x for x in recommended_instances if int(x['Users']) > 6
 
 # get a lits of all the instances that have more than 1 blocked instance and
 # then get the average number of instances that are blocked
-bi_list = [ int(x['BI']) for x in all_instances if int(x['BI']) > 1 ]
-bi_avg = numpy.average( bi_list )
+try:
+	bi_list = [ int(x['BI']) for x in all_instances if int(x['BI']) > 1 ]
+	bi_avg = numpy.average( bi_list )
+except Exception as e:
+	bi_avg = 2
 
 # get a lits of all the instances that are blocked by more than 1 instance and
 # then get the average number of that instances are are blocked
-bb_list = [ int(x['BB']) for x in all_instances if int(x['BB']) > 1 ]
-bb_avg = numpy.average( bb_list )
+try:
+	bb_list = [ int(x['BB']) for x in all_instances if int(x['BB']) > 1 ]
+	bb_avg = numpy.average( bb_list )
+except Exception as e:
+	bb_avg = 2
 
 # remove instances that are blocking or blocked-by too many other instancesk
 recommended_instances = [ x for x in recommended_instances if int(x['BI']) < bi_avg and int(x['BB']) < bb_avg ]
@@ -351,7 +357,7 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 # add the markdown table to the readme's contents
 readme_contents += markdown_table
 
-timestamp = datetime.datetime.utcnow().isoformat()
+timestamp = str(datetime.datetime.utcnow().isoformat())+ "+00:00"
 readme_contents += "\n"
 readme_contents += "Data generated at " +str(timestamp)
 readme_contents += "\n"
