@@ -12,7 +12,7 @@
 #                                   IMPORTS                                    #
 ################################################################################
 
-import json, csv, numpy
+import json, csv, numpy, datetime
 import pandas as pd
 
 ################################################################################
@@ -351,6 +351,10 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 # add the markdown table to the readme's contents
 readme_contents += markdown_table
 
+timestamp = datetime.datetime.utcnow().isoformat()
+readme_contents += "\n"
+readme_contents += "Data generated at " +str(timestamp)
+readme_contents += "\n"
 
 with open( "README.md", "w" ) as readme_file:
 	readme_file.write( readme_contents )
