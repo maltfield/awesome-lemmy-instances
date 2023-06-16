@@ -76,6 +76,7 @@ However, each server has their own local policies and configurations (for exampl
 
 ### Legend
 
+ * **Version** The version of Lemmy this server is running.
  * **NU** "Yes" means that **New Users** can register accounts. "No" means that this instance is not accepting new account registrations at this time.
  * **NC** "Yes" means that you can create a **New Community**. "No" means that only admins can create new communities on this instance.
  * **Fed** "Yes" means that you can interact with other **federated** lemmy instances. "No" means that the instance is partially or fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
@@ -87,7 +88,7 @@ However, each server has their own local policies and configurations (for exampl
  * **UT** Percent **UpTime** that the server has been online
 '''
 
-csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT\n"
+csv_contents = "Instance,Version,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT\n"
 
 ################
 # PROCESS JSON #
@@ -111,6 +112,7 @@ for instance in data['instance_details']:
 
 	domain = sanitize_text( instance['domain'] )
 	name = sanitize_text( instance['site_info']['site_view']['site']['name'] )
+	version = sanitize_text( instance['site_info']['version'] )
 	federation_enabled = instance['site_info']['site_view']['local_site']['federation_enabled']
 
 	if federation_enabled == True:
@@ -184,6 +186,7 @@ for instance in data['instance_details']:
 		uptime = str(uptime)+ "%"
 
 	csv_contents += "[" +name+ "](https://" +domain+ "),"
+	csv_contents += version+ ","
 	csv_contents += new_users+ ","
 	csv_contents += new_comm+ ","
 	csv_contents += fed+ ","
@@ -257,9 +260,10 @@ if uptime_available != list():
 			break
 
 # prepare data for csv file
-csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT\n"
+csv_contents = "Instance,Version,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT\n"
 for instance in recommended_instances:
 	csv_contents += instance['Instance']+ ','
+	csv_contents += instance['Version']+ ','
 	csv_contents += instance['NU']+ ','
 	csv_contents += instance['NC']+ ','
 	csv_contents += instance['Fed']+ ','
