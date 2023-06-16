@@ -232,6 +232,7 @@ try:
 	bi_list = [ int(x['BI']) for x in all_instances if int(x['BI']) > 1 ]
 	bi_avg = numpy.average( bi_list )
 except Exception as e:
+	print( "WARNING: Caught numpy exception when calculating bi_avg: " +str(e) )
 	bi_avg = 2
 
 # get a lits of all the instances that are blocked by more than 1 instance and
@@ -240,10 +241,14 @@ try:
 	bb_list = [ int(x['BB']) for x in all_instances if int(x['BB']) > 1 ]
 	bb_avg = numpy.average( bb_list )
 except Exception as e:
+	print( "WARNING: Caught numpy exception when calculating bb_avg: " +str(e) )
 	bb_avg = 2
 
+print( "bi_avg:|" +str(bi_avg)+ "|" )
+print( "bb_avg:|" +str(bb_avg)+ "|" )
+
 # remove instances that are blocking or blocked-by too many other instancesk
-recommended_instances = [ x for x in recommended_instances if int(x['BI']) < bi_avg and int(x['BB']) < bb_avg ]
+recommended_instances = [ x for x in recommended_instances if int(x['BI']) <= bi_avg and int(x['BB']) <= bb_avg ]
 
 # limit to those with the best uptime; first we make sure that we actually
 # have the uptime data
