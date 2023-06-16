@@ -87,4 +87,4 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 | [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 |    0 |    0 | 99%  | 0.17.2    |
 | [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.17.3    |
 
-Data generated at 2023-06-16T23:16:17.462548
+Data generated at 2023-06-16T23:31:40.528966+00:00
