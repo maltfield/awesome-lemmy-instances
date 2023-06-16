@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 ################################################################################
 # File:    generate_readme.py
-# Version: 0.1
+# Version: 0.2
 # Purpose: Creates the README.md file for this repo
 # Authors: Michael Altfield <michael@michaelaltfield.net>
 # Created: 2023-06-06
-# Updated: 2023-06-06
+# Updated: 2023-06-16
 ################################################################################
 
 ################################################################################
@@ -76,7 +76,6 @@ However, each server has their own local policies and configurations (for exampl
 
 ### Legend
 
- * **Version** The version of Lemmy this server is running.
  * **NU** "Yes" means that **New Users** can register accounts. "No" means that this instance is not accepting new account registrations at this time.
  * **NC** "Yes" means that you can create a **New Community**. "No" means that only admins can create new communities on this instance.
  * **Fed** "Yes" means that you can interact with other **federated** lemmy instances. "No" means that the instance is partially or fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
@@ -86,9 +85,10 @@ However, each server has their own local policies and configurations (for exampl
  * **BI** The number of instances that this instance is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **UT** Percent **UpTime** that the server has been online
+ * **Version** The version of Lemmy this server is running.
 '''
 
-csv_contents = "Instance,Version,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT\n"
+csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,Version\n"
 
 ################
 # PROCESS JSON #
@@ -186,7 +186,6 @@ for instance in data['instance_details']:
 		uptime = str(uptime)+ "%"
 
 	csv_contents += "[" +name+ "](https://" +domain+ "),"
-	csv_contents += version+ ","
 	csv_contents += new_users+ ","
 	csv_contents += new_comm+ ","
 	csv_contents += fed+ ","
@@ -195,7 +194,8 @@ for instance in data['instance_details']:
 	csv_contents += str(users_month)+ ','
 	csv_contents += str(blocking)+ ','
 	csv_contents += str(blocked_by)+ ','
-	csv_contents += str(uptime)
+	csv_contents += str(uptime)+ ','
+	csv_contents += version
 	csv_contents += "\n"
 
 # write the instance data table to the csv file
@@ -260,10 +260,9 @@ if uptime_available != list():
 			break
 
 # prepare data for csv file
-csv_contents = "Instance,Version,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT\n"
+csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,Version\n"
 for instance in recommended_instances:
 	csv_contents += instance['Instance']+ ','
-	csv_contents += instance['Version']+ ','
 	csv_contents += instance['NU']+ ','
 	csv_contents += instance['NC']+ ','
 	csv_contents += instance['Fed']+ ','
@@ -272,7 +271,8 @@ for instance in recommended_instances:
 	csv_contents += instance['Users']+ ','
 	csv_contents += instance['BI']+ ','
 	csv_contents += instance['BB']+ ','
-	csv_contents += instance['UT']
+	csv_contents += instance['UT']+ ','
+	csv_contents += instance['Version']
 	csv_contents += "\n"
 
 # write the recommended instance data table to a csv file
