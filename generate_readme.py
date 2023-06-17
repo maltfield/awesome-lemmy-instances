@@ -262,7 +262,7 @@ if uptime_available != list():
 	# loop down from 100% to 0%
 	for percent_uptime in reversed(range(100)):
 
-		high_uptime_instances = [x for x in recommended_instances if int(x['UT'][:-1]) > percent_uptime]
+		high_uptime_instances = [x for x in recommended_instances if x['UT'] != '??' and int(x['UT'][:-1]) > percent_uptime]
 
 		# do we have more than one instance above this uptime?
 		if len(high_uptime_instances) > 1:
