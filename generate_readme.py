@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 ################################################################################
 # File:    generate_readme.py
-# Version: 0.2
+# Version: 0.3
 # Purpose: Creates the README.md file for this repo
 # Authors: Michael Altfield <michael@michaelaltfield.net>
 # Created: 2023-06-06
-# Updated: 2023-06-16
+# Updated: 2023-06-19
 ################################################################################
 
 ################################################################################
@@ -318,6 +318,13 @@ After you pick an instance and register an account, you'll want to subscribe to 
 To **find popular communities** across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/) run by feddit.de.
 
  * https://browse.feddit.de/
+
+If you want a more direct mapping of your favorite /r/subreddits to lemmy, checkout these sites:
+
+1. [redditmigration.com](https://redditmigration.com/)
+1. [sub.rehab](https://sub.rehab/)
+1. yoasif's [Unofficial Subreddit Migration List](https://www.quippd.com/writing/2023/06/15/unofficial-subreddit-migration-list-lemmy-kbin-etc.html)
+
 
 <a href="https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/"><img src="lemmy-migration-find-subreddits-communities.jpg" alt="How To Find Lemmy Communities" /></a>
 
