@@ -32,11 +32,10 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
-| Instance                                   | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
-|:-------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
-| [VLemmy](https://vlemmy.net)               | Yes  | Yes  | Yes   | Yes     | Yes  |     220 |    0 |    0 | 100% | 0.17.4    |
-| [szmer](https://szmer.info)                | Yes  | Yes  | Yes   | Yes     | Yes  |      82 |    1 |    0 | 99%  | 0.17.3    |
-| [waveform.social](https://waveform.social) | Yes  | Yes  | Yes   | Yes     | Yes  |      61 |    0 |    0 | 99%  | 0.17.3    |
+| Instance                                       | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
+|:-----------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
+| [VLemmy](https://vlemmy.net)                   | Yes  | Yes  | Yes   | Yes     | Yes  |     220 |    0 |    0 | 100% | 0.17.4    |
+| [Exploding Heads](https://exploding-heads.com) | Yes  | Yes  | Yes   | Yes     | Yes  |      63 |    1 |    2 | 100% | 0.17.3    |
 
 # What's next?
 
@@ -47,6 +46,13 @@ After you pick an instance and register an account, you'll want to subscribe to 
 To **find popular communities** across all lemmy instances in the fediverse, you can use the [Lemmy Community Browser](https://browse.feddit.de/) run by feddit.de.
 
  * https://browse.feddit.de/
+
+If you want a more direct mapping of your favorite /r/subreddits to lemmy, checkout these sites:
+
+1. [redditmigration.com](https://redditmigration.com/)
+1. [sub.rehab](https://sub.rehab/)
+1. yoasif's [Unofficial Subreddit Migration List](https://www.quippd.com/writing/2023/06/15/unofficial-subreddit-migration-list-lemmy-kbin-etc.html)
+
 
 <a href="https://tech.michaelaltfield.net/2023/06/11/lemmy-migration-find-subreddits-communities/"><img src="lemmy-migration-find-subreddits-communities.jpg" alt="How To Find Lemmy Communities" /></a>
 
@@ -76,19 +82,19 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 | Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version     |
 |:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:------------|
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     587 |    4 |    0 | 98%  | 0.17.2-kt.1 |
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     523 |   42 |    1 | 99%  | 0.17.4      |
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     598 |  143 |    0 | 98%  | 0.17.4-kt.1 |
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     562 |   42 |    1 | 99%  | 0.17.4      |
 | [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     220 |    0 |    0 | 100% | 0.17.4      |
-| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |      82 |    1 |    0 | 99%  | 0.17.3      |
-| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |      81 |    0 |    1 | 100% | 0.17.4      |
-| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |      65 |    0 |    0 | 82%  | 0.17.4      |
-| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      61 |    0 |    0 | 99%  | 0.17.3      |
-| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | No   |      58 |    1 |    2 | 100% | 0.17.3      |
-| [I use arch linux FYI](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      48 |    0 |    0 | 97%  | 0.17.4      |
-| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      36 |    0 |    0 | 100% | 0.17.4      |
-| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      24 |    0 |    0 | 100% | 0.17.4      |
-| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      20 |    2 |    0 | 100% | 0.17.3      |
+| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     132 |    0 |    0 | 82%  | 0.17.4      |
+| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |     100 |    0 |    1 | 100% | 0.17.4      |
+| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    1 |    0 | 99%  | 0.17.4      |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      69 |    0 |    0 | 99%  | 0.17.4      |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      63 |    1 |    2 | 100% | 0.17.3      |
+| [I use arch linux FYI](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      56 |    0 |    0 | 98%  | 0.17.4      |
+| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      39 |    0 |    0 | 100% | 0.17.4      |
+| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      29 |    2 |    0 | 100% | 0.17.3      |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      27 |    0 |    0 | 100% | 0.17.4      |
 | [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 |    0 |    0 | 99%  | 0.17.2      |
 | [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.17.3      |
 
-Data generated at 2023-06-17T02:37:55.676933+00:00
+Data generated at 2023-06-19T18:03:24.656691+00:00
