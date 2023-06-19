@@ -322,7 +322,7 @@ To **find popular communities** across all lemmy instances in the fediverse, you
 If you want a more direct mapping of your favorite /r/subreddits to lemmy, checkout these sites:
 
 1. [redditmigration.com](https://redditmigration.com/)
-1. [sub.rehab](https://sub.rehab/)
+1. [sub.rehab](https://sub.rehab/?visibleServices=lemmy)
 1. yoasif's [Unofficial Subreddit Migration List](https://www.quippd.com/writing/2023/06/15/unofficial-subreddit-migration-list-lemmy-kbin-etc.html)
 
 
