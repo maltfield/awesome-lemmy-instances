@@ -41,6 +41,9 @@ def sanitize_text( text ):
 	text = text.replace( "\r", '' )
 	text = text.replace( "\n", '' )
 
+	# commas fuck with our CSV file; replace it with this homoglyph (0x201A)
+	text = text.replace( ",", '‚' )
+
 	return text
 
 ################################################################################
