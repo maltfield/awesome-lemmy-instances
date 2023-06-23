@@ -25,8 +25,12 @@ FATAL() {
 
 # this is so fucking unsafe https://rustup.rs/
 #curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-which cargo
-cargo --version
+
+CARGO=$(which cargo)
+if [[ -z ${CARGO} ]]; then
+	CARGO="${HOME}/.cargo/bin/cargo"
+fi
+${CARGO} --version
 
 { git clone https://github.com/LemmyNet/lemmy-stats-crawler.git \
 && cd lemmy-stats-crawler; } || FATAL 'Git clone failed';
@@ -40,13 +44,13 @@ if [ "${current_branch}" = "dev" ]; then
 	# the crawler does not go to other instances than those explicitly
 	# listed), for faster execution.
 
-	time cargo run -- --start-instances $crawl_list \
+	time ${CARGO} run -- --start-instances $crawl_list \
 	--json --max-crawl-distance 0 > lemmy-stats-crawler.json
 
 else
 	# this isn't dev; do a full crawl
 
-	time cargo run -- --start-instances $crawl_list \
+	time ${CARGO} run -- --start-instances $crawl_list \
 	--json > lemmy-stats-crawler.json
 
 fi
