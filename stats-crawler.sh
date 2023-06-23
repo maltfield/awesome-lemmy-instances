@@ -44,13 +44,13 @@ if [ "${current_branch}" = "dev" ]; then
 	# the crawler does not go to other instances than those explicitly
 	# listed), for faster execution.
 
-	time ${CARGO} run -- --start-instances $crawl_list \
+	time ${CARGO} run -- --verbose 4 --start-instances $crawl_list \
 	--json --max-crawl-distance 0 > lemmy-stats-crawler.json
 
 else
 	# this isn't dev; do a full crawl
 
-	time ${CARGO} run -- --start-instances $crawl_list \
+	time ${CARGO} run -- --verbose 4 --start-instances $crawl_list \
 	--json > lemmy-stats-crawler.json
 
 fi
