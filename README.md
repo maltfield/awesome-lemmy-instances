@@ -32,12 +32,8 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
-| Instance                                       | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
-|:-----------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
-| [VLemmy](https://vlemmy.net)                   | Yes  | Yes  | Yes   | Yes     | Yes  |     312 |    0 |    0 | 100% | 0.17.4    |
-| [szmer](https://szmer.info)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    1 |    0 | 99%  | 0.17.4    |
-| [waveform.social](https://waveform.social)     | Yes  | Yes  | Yes   | Yes     | Yes  |      69 |    0 |    0 | 99%  | 0.17.4    |
-| [Exploding Heads](https://exploding-heads.com) | Yes  | Yes  | Yes   | Yes     | Yes  |      68 |    1 |    2 | 99%  | 0.17.4    |
+| Instance   | NU   | NC   | Fed   | Adult   | ↓V   | Users   | BI   | BB   | UT   | Version   |
+|------------|------|------|-------|---------|------|---------|------|------|------|-----------|
 
 # What's next?
 
@@ -85,18 +81,13 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 | Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version     |
 |:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:------------|
 | [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     673 |  143 |    0 | 98%  | 0.17.4-kt.1 |
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | No      | Yes  |     583 |   42 |    1 | 99%  | 0.17.4      |
-| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     312 |    0 |    0 | 100% | 0.17.4      |
-| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     140 |    0 |    0 | 82%  | 0.17.4      |
-| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | No      | No   |     108 |    0 |    1 | 100% | 0.17.4      |
+| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     359 |    0 |    0 | 100% | 0.17.4      |
+| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | No      | No   |     131 |    3 |    0 | 100% | 0.17.4      |
 | [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    1 |    0 | 99%  | 0.17.4      |
-| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      69 |    0 |    0 | 99%  | 0.17.4      |
-| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      68 |    1 |    2 | 99%  | 0.17.4      |
-| [I use arch linux FYI](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      59 |    0 |    0 | 98%  | 0.17.4      |
-| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      49 |    0 |    0 | 100% | 0.17.4      |
-| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      29 |    2 |    0 | 100% | 0.17.3      |
-| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      28 |    0 |    0 | 100% | 0.17.4      |
-| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       3 |    0 |    0 | 99%  | 0.17.2      |
-| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.17.3      |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      81 |    1 |    1 | 99%  | 0.17.4      |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      74 |    0 |    0 | 96%  | 0.17.4      |
+| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      29 |    2 |    0 | 100% | 0.17.4      |
+| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       4 |    0 |    0 | 99%  | 0.17.2      |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.17.4      |
 
-Data generated at 2023-06-20T22:59:39.566749+00:00
+Data generated at 2023-06-23T22:58:18.807906+00:00
