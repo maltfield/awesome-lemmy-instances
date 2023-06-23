@@ -32,8 +32,8 @@ if [[ -z ${CARGO} ]]; then
 fi
 ${CARGO} --version
 
-{ git clone https://github.com/LemmyNet/lemmy-stats-crawler.git \
-&& cd lemmy-stats-crawler; } || FATAL 'Git clone failed';
+git clone https://github.com/LemmyNet/lemmy-stats-crawler.git
+pushd lemmy-stats-crawler
 
 # some pre-run output for debugging
 ls
