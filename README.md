@@ -22,7 +22,7 @@ However, each server has their own local policies and configurations (for exampl
  * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
  * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
  * **BI** The number of instances that this instance is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
- * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
+ * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on the lemmyverse will be limited in what they can see from this instance.
  * **UT** Percent **UpTime** that the server has been online
  * **Version** The version of Lemmy this instance is running.
 
