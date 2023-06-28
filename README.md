@@ -91,3 +91,4 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 | [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.17.4      |
 
 Data generated at 2023-06-23T22:58:18.807906+00:00
+
