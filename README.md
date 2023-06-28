@@ -90,4 +90,4 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 | [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | No    | Yes     | Yes  |      33 |    0 |    0 | 97%  | 0.18.0    |
 | [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | No    | Yes     | Yes  |       2 |    0 |    0 | 98%  | 0.18.0    |
 
-Data generated at 2023-06-28T18:25:50.672756+00:00
+Data generated at 2023-06-28T18:49:27.701903+00:00
