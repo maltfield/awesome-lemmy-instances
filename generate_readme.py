@@ -12,7 +12,7 @@
 #                                   IMPORTS                                    #
 ################################################################################
 
-import json, csv, numpy, datetime
+import json, csv, numpy, datetime, warnings
 import pandas as pd
 
 ################################################################################
@@ -49,6 +49,9 @@ def sanitize_text( text ):
 ################################################################################
 #                                  MAIN BODY                                   #
 ################################################################################
+
+# catch runtime warnings from numpy on 'nan' errors when calculating averages
+warnings.filterwarnings("error")
 
 ##################
 # CHECK SETTINGS #
@@ -114,7 +117,7 @@ with open( UPTIME_FILENAME ) as json_data:
 for instance in data['instance_details']:
 
 	domain = sanitize_text( instance['domain'] )
-#	print( domain )
+	print( domain )
 
 	name = sanitize_text( instance['site_info']['site_view']['site']['name'] )
 	version = sanitize_text( instance['site_info']['version'] )
@@ -156,6 +159,9 @@ for instance in data['instance_details']:
 		blocking = 0
 	else:
 		blocking = len(instance['federated_instances']['federated_instances']['blocked'])
+
+	print( "\tblocked_by:|" +str(blocked_by)+ "|" )
+	print( "\tblocking:|" +str(blocking)+ "|" )
 
 	# is this instance adult-friendly?
 	if slur_filter != None or enable_nsfw != True:
@@ -245,7 +251,7 @@ recommended_instances = [x for x in recommended_instances if int(x['Users']) > 6
 try:
 	bi_list = [ int(x['BI']) for x in all_instances if int(x['BI']) > 1 ]
 	bi_avg = numpy.average( bi_list )
-except Exception as e:
+except (Exception, RuntimeWarning) as e:
 	print( "WARNING: Caught numpy exception when calculating bi_avg: " +str(e) )
 	bi_avg = 2
 
@@ -254,7 +260,8 @@ except Exception as e:
 try:
 	bb_list = [ int(x['BB']) for x in all_instances if int(x['BB']) > 1 ]
 	bb_avg = numpy.average( bb_list )
-except Exception as e:
+	print( "MADE IT" )
+except (Exception, RuntimeWarning) as e:
 	print( "WARNING: Caught numpy exception when calculating bb_avg: " +str(e) )
 	bb_avg = 2
 
