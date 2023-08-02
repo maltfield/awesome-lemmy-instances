@@ -80,14 +80,14 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 | Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
 |:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | No    | Yes     | Yes  |     659 |   42 |    0 | 99%  | 0.18.0    |
-| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | No    | Yes     | Yes  |     435 |    0 |    0 | 100% | 0.18.0    |
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | No    | Yes     | Yes  |     658 |   42 |    0 | 99%  | 0.18.0    |
+| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | No    | Yes     | Yes  |     434 |    0 |    0 | 100% | 0.18.0    |
 | [Mander](https://mander.xyz)                      | Yes  | Yes  | No    | Yes     | Yes  |     161 |    0 |    0 | 82%  | 0.18.0    |
-| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | No    | Yes     | Yes  |      98 |    1 |    0 | 99%  | 0.18.0    |
-| [waveform.social](https://waveform.social)        | Yes  | Yes  | No    | Yes     | Yes  |      87 |    0 |    0 | 96%  | 0.18.0    |
-| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | No    | Yes     | Yes  |      71 |    0 |    0 | 99%  | 0.18.0    |
-| [monero.town](https://monero.town)                | Yes  | Yes  | No    | Yes     | Yes  |      56 |    0 |    0 | 99%  | 0.18.0    |
-| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | No    | Yes     | Yes  |      33 |    0 |    0 | 97%  | 0.18.0    |
-| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | No    | Yes     | Yes  |       2 |    0 |    0 | 98%  | 0.18.0    |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | No    | Yes     | Yes  |      97 |    1 |    0 | 100% | 0.18.0    |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | No    | Yes     | Yes  |      87 |    0 |    0 | ??   | 0.18.0    |
+| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | No    | Yes     | Yes  |      71 |    0 |    0 | ??   | 0.18.0    |
+| [monero.town](https://monero.town)                | Yes  | Yes  | No    | Yes     | Yes  |      56 |    0 |    0 | ??   | 0.18.0    |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | No    | Yes     | Yes  |      33 |    0 |    0 | ??   | 0.18.0    |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | No    | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.18.0    |
 
-Data generated at 2023-06-28T18:25:50.672756+00:00
+Data generated at 2023-06-28T18:53:30.518133+00:00

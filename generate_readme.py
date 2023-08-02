@@ -117,11 +117,12 @@ with open( UPTIME_FILENAME ) as json_data:
 for instance in data['instance_details']:
 
 	domain = sanitize_text( instance['domain'] )
-	print( domain )
-
 	name = sanitize_text( instance['site_info']['site_view']['site']['name'] )
 	version = sanitize_text( instance['site_info']['version'] )
 	federation_enabled = instance['site_info']['site_view']['local_site']['federation_enabled']
+
+	print( domain )
+	print( "\tversion:|" +str(version)+ "|" )
 
 	if federation_enabled == True:
 #		print( "\tfederated_instances:|" +str(instance['federated_instances'].keys())+ "|" )
