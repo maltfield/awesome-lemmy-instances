@@ -25,7 +25,7 @@ jobs:
       run: |
 
         # install depends
-        sudo apt-get install python3-pandas  python3-tabulate
+        sudo apt-get install python3-pandas python3-tabulate pkg-config libssl-dev
 
         # generate the lemmy-stats-crawler.json file
         ./stats-crawler.sh
