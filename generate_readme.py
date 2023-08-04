@@ -368,7 +368,7 @@ You may want to also checkout the following websites for more information about 
  * [FediDB](https://fedidb.org/software/lemmy) - Yet another site comparing lemmy instances (with pretty charts)
  * [Lemmy Sourcecode](https://github.com/LemmyNet/lemmy)
  * [Jerboa (Official Android Client)](https://f-droid.org/packages/com.jerboa/)
- * [Mlem (iOS Client)](https://testflight.apple.com/join/xQfmkJhc)
+ * [Mlem (iOS Client)](https://apps.apple.com/gb/app/mlem-for-lemmy/id6450543782)
 
 """
 
