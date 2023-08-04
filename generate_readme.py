@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 ################################################################################
 # File:    generate_readme.py
-# Version: 0.3
+# Version: 0.4
 # Purpose: Creates the README.md file for this repo
 # Authors: Michael Altfield <michael@michaelaltfield.net>
 # Created: 2023-06-06
-# Updated: 2023-06-19
+# Updated: 2023-08-04
 ################################################################################
 
 ################################################################################
@@ -175,10 +175,13 @@ for instance in data['instance_details']:
 	else:
 		new_comm = "Yes"
 
-	if federation_enabled == False or federated_allowed != None:
+	if federation_enabled == False or federated_allowed != []:
 		fed = 'No'
 	else:
 		fed = "Yes"
+	print( "\tfederation_enabled:|" +str(federation_enabled)+ "|" )
+	print( "\tfederated_allowed:|" +str(federated_allowed)+ "|" )
+	print( "\tfed:|" +str(fed)+ "|" )
 
 	if enable_downvotes == True:
 		downvotes = "Yes"

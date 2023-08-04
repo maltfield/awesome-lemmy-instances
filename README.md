@@ -32,8 +32,10 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
-| Instance   | NU   | NC   | Fed   | Adult   | ↓V   | Users   | BI   | BB   | UT   | Version   |
-|------------|------|------|-------|---------|------|---------|------|------|------|-----------|
+| Instance                                       | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
+|:-----------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
+| [VLemmy](https://vlemmy.net)                   | Yes  | Yes  | Yes   | Yes     | Yes  |     434 |    0 |    0 | 100% | 0.18.0    |
+| [Exploding Heads](https://exploding-heads.com) | Yes  | Yes  | Yes   | Yes     | Yes  |      97 |    1 |    0 | 100% | 0.18.0    |
 
 # What's next?
 
@@ -80,14 +82,14 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 | Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
 |:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | No    | Yes     | Yes  |     659 |   42 |    0 | 99%  | 0.18.0    |
-| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | No    | Yes     | Yes  |     435 |    0 |    0 | 100% | 0.18.0    |
-| [Mander](https://mander.xyz)                      | Yes  | Yes  | No    | Yes     | Yes  |     161 |    0 |    0 | 82%  | 0.18.0    |
-| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | No    | Yes     | Yes  |      98 |    1 |    0 | 99%  | 0.18.0    |
-| [waveform.social](https://waveform.social)        | Yes  | Yes  | No    | Yes     | Yes  |      87 |    0 |    0 | 96%  | 0.18.0    |
-| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | No    | Yes     | Yes  |      71 |    0 |    0 | 99%  | 0.18.0    |
-| [monero.town](https://monero.town)                | Yes  | Yes  | No    | Yes     | Yes  |      56 |    0 |    0 | 99%  | 0.18.0    |
-| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | No    | Yes     | Yes  |      33 |    0 |    0 | 97%  | 0.18.0    |
-| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | No    | Yes     | Yes  |       2 |    0 |    0 | 98%  | 0.18.0    |
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | Yes     | Yes  |     658 |   42 |    0 | 99%  | 0.18.0    |
+| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     434 |    0 |    0 | 100% | 0.18.0    |
+| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     161 |    0 |    0 | 82%  | 0.18.0    |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      97 |    1 |    0 | 100% | 0.18.0    |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      87 |    0 |    0 | ??   | 0.18.0    |
+| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | Yes   | Yes     | Yes  |      71 |    0 |    0 | ??   | 0.18.0    |
+| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      56 |    0 |    0 | ??   | 0.18.0    |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      33 |    0 |    0 | ??   | 0.18.0    |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.18.0    |
 
-Data generated at 2023-06-28T18:49:27.701903+00:00
+Data generated at 2023-08-04T14:43:08.037072+00:00
