@@ -34,8 +34,11 @@ Don't overthink this. **It doesn't matter which instance you use.** You'll still
 
 | Instance                                       | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
 |:-----------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
-| [VLemmy](https://vlemmy.net)                   | Yes  | Yes  | Yes   | Yes     | Yes  |     434 |    0 |    0 | 100% | 0.18.0    |
-| [Exploding Heads](https://exploding-heads.com) | Yes  | Yes  | Yes   | Yes     | Yes  |      97 |    1 |    1 | 100% | 0.18.0    |
+| [Lemmygrad](https://lemmygrad.ml)              | Yes  | Yes  | Yes   | Yes     | Yes  |     641 |   43 |    0 | 99%  | 0.18.3    |
+| [szmer](https://szmer.info)                    | Yes  | Yes  | Yes   | Yes     | Yes  |     136 |    3 |    0 | 99%  | 0.18.1    |
+| [monero.town](https://monero.town)             | Yes  | Yes  | Yes   | Yes     | Yes  |      89 |    0 |    0 | 99%  | 0.18.1    |
+| [waveform.social](https://waveform.social)     | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    0 |    0 | 99%  | 0.18.1    |
+| [iusearchlinux.fyi](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      82 |    0 |    0 | 99%  | 0.18.3    |
 
 # What's next?
 
@@ -50,7 +53,7 @@ To **find popular communities** across all lemmy instances in the fediverse, you
 If you want a more direct mapping of your favorite /r/subreddits to lemmy, checkout these sites:
 
 1. [redditmigration.com](https://redditmigration.com/)
-1. [sub.rehab](https://sub.rehab/?searchTerm=&visibleServices=lemmy&officialOnly=false&newOnly=false&favoriteOnly=false&sortBy=users_active_week)
+1. [sub.rehab](https://sub.rehab/?visibleServices=lemmy)
 1. yoasif's [Unofficial Subreddit Migration List](https://www.quippd.com/writing/2023/06/15/unofficial-subreddit-migration-list-lemmy-kbin-etc.html)
 
 
@@ -80,16 +83,21 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
 
-| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
-|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | Yes     | Yes  |     658 |   42 |    0 | 99%  | 0.18.0    |
-| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     434 |    0 |    0 | 100% | 0.18.0    |
-| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     161 |    0 |    0 | 82%  | 0.18.0    |
-| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      97 |    1 |    1 | 100% | 0.18.0    |
-| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      87 |    0 |    0 | ??   | 0.18.0    |
-| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | Yes   | Yes     | Yes  |      71 |    0 |    0 | ??   | 0.18.0    |
-| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      56 |    0 |    0 | ??   | 0.18.0    |
-| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      33 |    0 |    0 | ??   | 0.18.0    |
-| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   | 0.18.0    |
+| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version                        |
+|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:-------------------------------|
+| [Beehaw](https://beehaw.org)                      | Yes  | No   | Yes   | Yes     | No   |    2417 |  410 |    0 | 97%  | 0.18.2                         |
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |    1004 |  158 |    0 | 98%  | 0.18.2-rc.2-50-g08455003c-kt.2 |
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | Yes     | Yes  |     641 |   43 |    0 | 99%  | 0.18.3                         |
+| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |     572 |    3 |    0 | 97%  | 0.18.2                         |
+| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     190 |    0 |    0 | 83%  | 0.18.3                         |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | No   |     143 |    3 |    0 | 99%  | 0.18.3                         |
+| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |     136 |    3 |    0 | 99%  | 0.18.1                         |
+| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      89 |    0 |    0 | 99%  | 0.18.1                         |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    0 |    0 | 99%  | 0.18.1                         |
+| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | Yes   | Yes     | Yes  |      82 |    0 |    0 | 99%  | 0.18.3                         |
+| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      34 |    2 |    0 | 99%  | 0.18.3                         |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      12 |    0 |    0 | 96%  | 0.18.3                         |
+| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       5 |    0 |    0 | 98%  | 0.18.2                         |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       1 |    0 |    0 | 99%  | 0.18.3                         |
 
-Data generated at 2023-08-09T01:13:20.575596+00:00
+Data generated at 2023-08-04T15:40:15.651944+00:00
