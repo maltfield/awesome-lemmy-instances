@@ -109,7 +109,9 @@ print( os.listdir('lemmy-stats-crawler') )
 with open( LEMMY_STATS_CRAWLER_FILEPATH ) as json_data:
 	data = json.load(json_data)
 
-instances_with_blocked = [x for x in data['instance_details'] if x['federated_instances'] != None ]
+#print( "data:|" +str(data)+ "|" )
+
+instances_with_blocked = [x for x in data['instance_details'] if x['federated_instances']['federated_instances']['blocked'] != [] ]
 
 with open( UPTIME_FILENAME ) as json_data:
 	uptime_data = json.load(json_data)
@@ -151,7 +153,11 @@ for instance in data['instance_details']:
 	registration_mode = instance['site_info']['site_view']['local_site']['registration_mode']
 
 	# count the number of instances that block this instance
-	blocked_by = len([x for x in instances_with_blocked if x['federated_instances']['federated_instances']['blocked'] != None and domain in x['federated_instances']['federated_instances']['blocked'] ])
+	blocked_by = 0
+	for i in instances_with_blocked:
+		for item in i['federated_instances']['federated_instances']['blocked']:
+			if item['domain'] == domain:
+				blocked_by += 1
 
 	# count the number of instances that this instance blocks
 	if instance['federated_instances'] == None:
@@ -264,7 +270,6 @@ except (Exception, RuntimeWarning) as e:
 try:
 	bb_list = [ int(x['BB']) for x in all_instances if int(x['BB']) > 1 ]
 	bb_avg = numpy.average( bb_list )
-	print( "MADE IT" )
 except (Exception, RuntimeWarning) as e:
 	print( "WARNING: Caught numpy exception when calculating bb_avg: " +str(e) )
 	bb_avg = 2
@@ -347,7 +352,7 @@ To **find popular communities** across all lemmy instances in the fediverse, you
 If you want a more direct mapping of your favorite /r/subreddits to lemmy, checkout these sites:
 
 1. [redditmigration.com](https://redditmigration.com/)
-1. [sub.rehab](https://sub.rehab/?visibleServices=lemmy)
+1. [sub.rehab](https://sub.rehab/?searchTerm=&visibleServices=lemmy&officialOnly=false&newOnly=false&favoriteOnly=false&sortBy=users_active_week)
 1. yoasif's [Unofficial Subreddit Migration List](https://www.quippd.com/writing/2023/06/15/unofficial-subreddit-migration-list-lemmy-kbin-etc.html)
 
 
