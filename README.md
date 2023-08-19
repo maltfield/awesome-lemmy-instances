@@ -40,12 +40,20 @@ Don't overthink this. **It doesn't matter which instance you use.** You'll still
 =======
 | Instance                                       | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
 |:-----------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
+<<<<<<< HEAD
 | [Lemmygrad](https://lemmygrad.ml)              | Yes  | Yes  | Yes   | Yes     | Yes  |     641 |   43 |    0 | 99%  | 0.18.3    |
 | [szmer](https://szmer.info)                    | Yes  | Yes  | Yes   | Yes     | Yes  |     136 |    3 |    0 | 99%  | 0.18.1    |
 | [monero.town](https://monero.town)             | Yes  | Yes  | Yes   | Yes     | Yes  |      89 |    0 |    0 | 99%  | 0.18.1    |
 | [waveform.social](https://waveform.social)     | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    0 |    0 | 99%  | 0.18.1    |
 | [iusearchlinux.fyi](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      82 |    0 |    0 | 99%  | 0.18.3    |
 >>>>>>> dev
+=======
+| [Lemmygrad](https://lemmygrad.ml)              | Yes  | Yes  | Yes   | Yes     | Yes  |     628 |   44 |    2 | 99%  | 0.18.4    |
+| [szmer](https://szmer.info)                    | Yes  | Yes  | Yes   | Yes     | Yes  |     129 |    3 |    0 | 99%  | 0.18.1    |
+| [monero.town](https://monero.town)             | Yes  | Yes  | Yes   | Yes     | Yes  |      86 |    0 |    0 | 99%  | 0.18.1    |
+| [iusearchlinux.fyi](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      82 |    0 |    0 | 99%  | 0.18.4    |
+| [waveform.social](https://waveform.social)     | Yes  | Yes  | Yes   | Yes     | Yes  |      81 |    0 |    0 | 99%  | 0.18.1    |
+>>>>>>> a187ab22df76c933a2b51cfc7e013cb151afb046
 
 # What's next?
 
@@ -60,7 +68,7 @@ To **find popular communities** across all lemmy instances in the fediverse, you
 If you want a more direct mapping of your favorite /r/subreddits to lemmy, checkout these sites:
 
 1. [redditmigration.com](https://redditmigration.com/)
-1. [sub.rehab](https://sub.rehab/?visibleServices=lemmy)
+1. [sub.rehab](https://sub.rehab/?searchTerm=&visibleServices=lemmy&officialOnly=false&newOnly=false&favoriteOnly=false&sortBy=users_active_week)
 1. yoasif's [Unofficial Subreddit Migration List](https://www.quippd.com/writing/2023/06/15/unofficial-subreddit-migration-list-lemmy-kbin-etc.html)
 
 
@@ -1443,20 +1451,24 @@ Data generated at 2023-08-08T23:30:38.618566+00:00
 =======
 | Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version                        |
 |:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:-------------------------------|
-| [Beehaw](https://beehaw.org)                      | Yes  | No   | Yes   | Yes     | No   |    2417 |  410 |    0 | 97%  | 0.18.2                         |
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |    1004 |  158 |    0 | 98%  | 0.18.2-rc.2-50-g08455003c-kt.2 |
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | Yes     | Yes  |     641 |   43 |    0 | 99%  | 0.18.3                         |
-| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |     572 |    3 |    0 | 97%  | 0.18.2                         |
-| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     190 |    0 |    0 | 83%  | 0.18.3                         |
-| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | No   |     143 |    3 |    0 | 99%  | 0.18.3                         |
-| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |     136 |    3 |    0 | 99%  | 0.18.1                         |
-| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      89 |    0 |    0 | 99%  | 0.18.1                         |
-| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    0 |    0 | 99%  | 0.18.1                         |
-| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | Yes   | Yes     | Yes  |      82 |    0 |    0 | 99%  | 0.18.3                         |
-| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      34 |    2 |    0 | 99%  | 0.18.3                         |
-| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      12 |    0 |    0 | 96%  | 0.18.3                         |
+| [Beehaw](https://beehaw.org)                      | Yes  | No   | Yes   | Yes     | No   |    2162 |  410 |    0 | 97%  | 0.18.2                         |
+| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     952 |  161 |    0 | 98%  | 0.18.2-rc.2-50-g08455003c-kt.2 |
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | Yes     | Yes  |     628 |   44 |    2 | 99%  | 0.18.4                         |
+| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |     541 |    3 |    1 | 97%  | 0.18.3                         |
+| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     173 |    0 |    0 | 83%  | 0.18.4                         |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | No   |     136 |    3 |    4 | 99%  | 0.18.3                         |
+| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |     129 |    3 |    0 | 99%  | 0.18.1                         |
+| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      86 |    0 |    0 | 99%  | 0.18.1                         |
+| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | Yes   | Yes     | Yes  |      82 |    0 |    0 | 99%  | 0.18.4                         |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      81 |    0 |    0 | 99%  | 0.18.1                         |
+| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      36 |    2 |    0 | 99%  | 0.18.3                         |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      26 |    0 |    0 | 96%  | 0.18.3                         |
 | [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       5 |    0 |    0 | 98%  | 0.18.2                         |
-| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       1 |    0 |    0 | 99%  | 0.18.3                         |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | 99%  | 0.18.3                         |
 
+<<<<<<< HEAD
 Data generated at 2023-08-04T15:40:15.651944+00:00
 >>>>>>> dev
+=======
+Data generated at 2023-08-09T01:34:40.803078+00:00
+>>>>>>> a187ab22df76c933a2b51cfc7e013cb151afb046

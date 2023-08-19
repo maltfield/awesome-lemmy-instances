@@ -1,5 +1,6 @@
 Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,Version
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Lemmy.world](https://lemmy.world),Yes,Yes,Yes,Yes,Yes,23253,51,0,97%,0.18.3
 [lemm.ee](https://lemm.ee),Yes,Yes,Yes,Yes,Yes,3608,43,0,100%,0.18.4-rc.1
 [Lemmy](https://lemmy.ml),Yes,Yes,Yes,Yes,Yes,3563,44,0,99%,0.18.4
@@ -1361,3 +1362,19 @@ Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,Version
 [Baraza](https://baraza.africa),Yes,Yes,No,Yes,Yes,5,0,0,98%,0.18.2
 [Lemmy  PussTheCat](https://lemmy.pussthecat.org),Yes,Yes,Yes,Yes,Yes,1,0,0,99%,0.18.3
 >>>>>>> dev
+=======
+[Beehaw](https://beehaw.org),Yes,No,Yes,Yes,No,2162,410,0,97%,0.18.2
+[Blåhaj Lemmy](https://lemmy.blahaj.zone),Yes,Yes,Yes,Yes,No,952,161,0,98%,0.18.2-rc.2-50-g08455003c-kt.2
+[Lemmygrad](https://lemmygrad.ml),Yes,Yes,Yes,Yes,Yes,628,44,2,99%,0.18.4
+[Reddthat](https://reddthat.com),Yes,Yes,Yes,Yes,No,541,3,1,97%,0.18.3
+[Mander](https://mander.xyz),Yes,Yes,Yes,Yes,Yes,173,0,0,83%,0.18.4
+[Exploding Heads](https://exploding-heads.com),Yes,Yes,Yes,Yes,No,136,3,4,99%,0.18.3
+[szmer](https://szmer.info),Yes,Yes,Yes,Yes,Yes,129,3,0,99%,0.18.1
+[monero.town](https://monero.town),Yes,Yes,Yes,Yes,Yes,86,0,0,99%,0.18.1
+[iusearchlinux.fyi](https://iusearchlinux.fyi),Yes,Yes,Yes,Yes,Yes,82,0,0,99%,0.18.4
+[waveform.social](https://waveform.social),Yes,Yes,Yes,Yes,Yes,81,0,0,99%,0.18.1
+[lemmy.studio](https://lemmy.studio),Yes,Yes,Yes,Yes,Yes,36,2,0,99%,0.18.3
+[toast.ooo](https://toast.ooo),Yes,Yes,Yes,Yes,Yes,26,0,0,96%,0.18.3
+[Baraza](https://baraza.africa),Yes,Yes,No,Yes,Yes,5,0,0,98%,0.18.2
+[Lemmy  PussTheCat](https://lemmy.pussthecat.org),Yes,Yes,Yes,Yes,Yes,2,0,0,99%,0.18.3
+>>>>>>> a187ab22df76c933a2b51cfc7e013cb151afb046
