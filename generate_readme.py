@@ -325,7 +325,7 @@ if uptime_available != list():
 			break
 
 # prepare data for csv file
-csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,Version\n"
+csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,MO,Version\n"
 for instance in recommended_instances:
 	csv_contents += instance['Instance']+ ','
 	csv_contents += instance['NU']+ ','
