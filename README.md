@@ -24,6 +24,7 @@ However, each server has their own local policies and configurations (for exampl
  * **BI** The number of instances that this instance is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **UT** Percent **UpTime** that the server has been online
+ * **MO** Number of **Months Online** since this server was first discovered. Higher is better.
  * **Version** The version of Lemmy this instance is running.
 
 # Recommended Instances
@@ -32,12 +33,10 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
-| Instance                                       | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version   |
-|:-----------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:----------|
-| [Lemmygrad](https://lemmygrad.ml)              | Yes  | Yes  | Yes   | Yes     | Yes  |     617 |   44 |    3 | 99%  | 0.18.4    |
-| [szmer](https://szmer.info)                    | Yes  | Yes  | Yes   | Yes     | Yes  |     144 |    3 |    0 | 99%  | 0.18.1    |
-| [monero.town](https://monero.town)             | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    0 |    0 | 99%  | 0.18.4    |
-| [iusearchlinux.fyi](https://iusearchlinux.fyi) | Yes  | Yes  | Yes   | Yes     | Yes  |      79 |    0 |    0 | 99%  | 0.18.4    |
+| Instance   | NU   | NC   | Fed   | Adult   |   ↓V |   Users |   BI | BB   |   UT | Version   |
+|:-----------|:-----|:-----|:------|:--------|-----:|--------:|-----:|:-----|-----:|:----------|
+| Yes        | Yes  | Yes  | Yes   | Yes     |  658 |      42 |    0 | 99%  |   34 | 0.18.0    |
+| Yes        | Yes  | Yes  | Yes   | Yes     |   97 |       1 |    1 | 100% |   16 | 0.18.0    |
 
 # What's next?
 
@@ -82,20 +81,16 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 
 > ⓘ Note To view a wider version of the table, [click here](README.md).
 
-| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   | Version     |
-|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|:------------|
-| [Beehaw](https://beehaw.org)                      | Yes  | No   | Yes   | Yes     | No   |    1857 |  409 |    0 | 97%  | 0.18.2      |
-| [Blåhaj Lemmy](https://lemmy.blahaj.zone)         | Yes  | Yes  | Yes   | Yes     | No   |     914 |  165 |    0 | 98%  | 0.18.4-kt.2 |
-| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | Yes     | Yes  |     617 |   44 |    3 | 99%  | 0.18.4      |
-| [Reddthat](https://reddthat.com)                  | Yes  | Yes  | Yes   | Yes     | No   |     535 |    3 |    1 | 98%  | 0.18.4      |
-| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     156 |    0 |    0 | 83%  | 0.18.4      |
-| [szmer](https://szmer.info)                       | Yes  | Yes  | Yes   | Yes     | Yes  |     144 |    3 |    0 | 99%  | 0.18.1      |
-| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | No   |     119 |    4 |    4 | 99%  | 0.18.4      |
-| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      85 |    0 |    0 | 99%  | 0.18.4      |
-| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | Yes   | Yes     | Yes  |      79 |    0 |    0 | 99%  | 0.18.4      |
-| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      33 |    0 |    0 | 97%  | 0.18.3      |
-| [lemmy.studio](https://lemmy.studio)              | Yes  | Yes  | Yes   | Yes     | Yes  |      32 |    2 |    0 | 92%  | 0.18.3      |
-| [Baraza](https://baraza.africa)                   | Yes  | Yes  | No    | Yes     | Yes  |       5 |    0 |    0 | 98%  | 0.18.4      |
-| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | 99%  | 0.18.4      |
+| Instance                                          | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   |   MO | Version   |
+|:--------------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|-----:|:----------|
+| [Lemmygrad](https://lemmygrad.ml)                 | Yes  | Yes  | Yes   | Yes     | Yes  |     658 |   42 |    0 | 99%  |   34 | 0.18.0    |
+| [VLemmy](https://vlemmy.net)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     434 |    0 |    0 | 100% |    1 | 0.18.0    |
+| [Mander](https://mander.xyz)                      | Yes  | Yes  | Yes   | Yes     | Yes  |     161 |    0 |    0 | 82%  |   28 | 0.18.0    |
+| [Exploding Heads](https://exploding-heads.com)    | Yes  | Yes  | Yes   | Yes     | Yes  |      97 |    1 |    1 | 100% |   16 | 0.18.0    |
+| [waveform.social](https://waveform.social)        | Yes  | Yes  | Yes   | Yes     | Yes  |      87 |    0 |    0 | ??   |    2 | 0.18.0    |
+| [iusearchlinux.fyi](https://iusearchlinux.fyi)    | Yes  | Yes  | Yes   | Yes     | Yes  |      71 |    0 |    0 | ??   |    2 | 0.18.0    |
+| [monero.town](https://monero.town)                | Yes  | Yes  | Yes   | Yes     | Yes  |      56 |    0 |    0 | ??   |    2 | 0.18.0    |
+| [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      33 |    0 |    0 | ??   |    2 | 0.18.0    |
+| [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   |    2 | 0.18.0    |
 
-Data generated at 2023-08-19T13:12:28.376184+00:00
+Data generated at 2023-08-31T01:48:59.283642+00:00

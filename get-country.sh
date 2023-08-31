@@ -5,7 +5,7 @@ set -x
 # SETTINGS #
 ############
 
-OUTPUT_FILE='age.json'
+OUTPUT_FILE='country.json'
 
 #####################
 # DECLARE VARIABLES #

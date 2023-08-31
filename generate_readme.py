@@ -23,6 +23,7 @@ LEMMY_STATS_CRAWLER_FILENAME = 'lemmy-stats-crawler.json'
 LEMMY_STATS_CRAWLER_FILEPATH = 'lemmy-stats-crawler/' + LEMMY_STATS_CRAWLER_FILENAME
 
 UPTIME_FILENAME = 'uptime.json'
+AGE_FILENAME = 'age.json'
 
 OUT_CSV = 'awesome-lemmy-instances.csv'
 
@@ -91,10 +92,11 @@ However, each server has their own local policies and configurations (for exampl
  * **BI** The number of instances that this instance is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
  * **UT** Percent **UpTime** that the server has been online
+ * **MO** Number of **Months Online** since this server was first discovered. Higher is better.
  * **Version** The version of Lemmy this instance is running.
 '''
 
-csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,Version\n"
+csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,MO,Version\n"
 
 ################
 # PROCESS JSON #
@@ -115,6 +117,9 @@ instances_with_blocked = [x for x in data['instance_details'] if x['federated_in
 
 with open( UPTIME_FILENAME ) as json_data:
 	uptime_data = json.load(json_data)
+
+with open( AGE_FILENAME ) as json_data:
+	age_data = json.load(json_data)
 
 for instance in data['instance_details']:
 
@@ -203,6 +208,10 @@ for instance in data['instance_details']:
 	# the 'domain' matches this iteration lemmy instance's domain
 	uptime = [x['uptime_alltime'] for x in uptime_data['data']['nodes'] if x['domain'] == domain]
 
+	# stupid way to say gimmie the 'monthsmonitored' data from the json where
+	# the 'domain' matches this iteration lemmy instance's domain
+	age = [x['monthsmonitored'] for x in age_data['data']['nodes'] if x['domain'] == domain]
+
 	# did we figure out an uptime for this domain?
 	if uptime == []:
 		# we couldn't find an uptime; set it to '??'
@@ -215,6 +224,17 @@ for instance in data['instance_details']:
 		uptime = round(float(uptime))
 		uptime = str(uptime)+ "%"
 
+	# did we figure out an age for this domain?
+	if age == []:
+		# we couldn't find an uptime; set it to '??'
+		age = '??'
+	else:
+		# we got an uptime! Format it for the table
+
+		age = age[0]
+		# let's keep the data simple
+		age = round(float(age))
+
 	csv_contents += "[" +name+ "](https://" +domain+ "),"
 	csv_contents += new_users+ ","
 	csv_contents += new_comm+ ","
@@ -225,6 +245,7 @@ for instance in data['instance_details']:
 	csv_contents += str(blocking)+ ','
 	csv_contents += str(blocked_by)+ ','
 	csv_contents += str(uptime)+ ','
+	csv_contents += str(age)+ ','
 	csv_contents += version
 	csv_contents += "\n"
 
@@ -280,6 +301,9 @@ print( "bb_avg:|" +str(bb_avg)+ "|" )
 # remove instances that are blocking or blocked-by too many other instancesk
 recommended_instances = [ x for x in recommended_instances if int(x['BI']) <= bi_avg and int(x['BB']) <= bb_avg ]
 
+# remove instances that haven't been online for 2 months
+recommended_instances = [ x for x in recommended_instances if int(x['MO']) >= 2 ]
+
 # limit to those with the best uptime; first we make sure that we actually
 # have the uptime data
 uptime_available = [x for x in recommended_instances if x['UT'] != '??']
@@ -313,6 +337,7 @@ for instance in recommended_instances:
 	csv_contents += instance['BI']+ ','
 	csv_contents += instance['BB']+ ','
 	csv_contents += instance['UT']+ ','
+	csv_contents += instance['MO']+ ','
 	csv_contents += instance['Version']
 	csv_contents += "\n"
 
