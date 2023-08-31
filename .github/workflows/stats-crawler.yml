@@ -34,6 +34,9 @@ jobs:
         # get uptimes of lemmy instances
         ./get-uptime.sh
 
+        # get age of lemmy instances
+        ./get-age.sh
+
         # process the json file and update the README.md file
         ./generate_readme.py
 

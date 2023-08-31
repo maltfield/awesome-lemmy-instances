@@ -33,10 +33,10 @@ Just **click on a random instance** from the below "recommended" instances.
 
 Don't overthink this. **It doesn't matter which instance you use.** You'll still be able to interact with communities (subreddits) on all other instances, regardless of which instance your account lives 🙂
 
-| Instance   | NU   | NC   | Fed   | Adult   |   ↓V |   Users |   BI | BB   |   UT | Version   |
-|:-----------|:-----|:-----|:------|:--------|-----:|--------:|-----:|:-----|-----:|:----------|
-| Yes        | Yes  | Yes  | Yes   | Yes     |  658 |      42 |    0 | 99%  |   34 | 0.18.0    |
-| Yes        | Yes  | Yes  | Yes   | Yes     |   97 |       1 |    1 | 100% |   16 | 0.18.0    |
+| Instance                                       | NU   | NC   | Fed   | Adult   | ↓V   |   Users |   BI |   BB | UT   |   MO | Version   |
+|:-----------------------------------------------|:-----|:-----|:------|:--------|:-----|--------:|-----:|-----:|:-----|-----:|:----------|
+| [Lemmygrad](https://lemmygrad.ml)              | Yes  | Yes  | Yes   | Yes     | Yes  |     658 |   42 |    0 | 99%  |   34 | 0.18.0    |
+| [Exploding Heads](https://exploding-heads.com) | Yes  | Yes  | Yes   | Yes     | Yes  |      97 |    1 |    1 | 100% |   16 | 0.18.0    |
 
 # What's next?
 
@@ -93,4 +93,4 @@ Download table as <a href="https://raw.githubusercontent.com/maltfield/awesome-l
 | [toast.ooo](https://toast.ooo)                    | Yes  | Yes  | Yes   | Yes     | Yes  |      33 |    0 |    0 | ??   |    2 | 0.18.0    |
 | [Lemmy  PussTheCat](https://lemmy.pussthecat.org) | Yes  | Yes  | Yes   | Yes     | Yes  |       2 |    0 |    0 | ??   |    2 | 0.18.0    |
 
-Data generated at 2023-08-31T01:48:59.283642+00:00
+Data generated at 2023-08-31T01:54:23.214245+00:00
