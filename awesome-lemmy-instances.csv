@@ -1,10 +1,10 @@
 Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,MO,Version
-[Lemmygrad](https://lemmygrad.ml),Yes,Yes,Yes,Yes,Yes,658,42,0,99%,34,0.18.0
-[VLemmy](https://vlemmy.net),Yes,Yes,Yes,Yes,Yes,434,0,0,100%,1,0.18.0
-[Mander](https://mander.xyz),Yes,Yes,Yes,Yes,Yes,161,0,0,82%,28,0.18.0
-[Exploding Heads](https://exploding-heads.com),Yes,Yes,Yes,Yes,Yes,97,1,1,100%,16,0.18.0
-[waveform.social](https://waveform.social),Yes,Yes,Yes,Yes,Yes,87,0,0,??,2,0.18.0
-[iusearchlinux.fyi](https://iusearchlinux.fyi),Yes,Yes,Yes,Yes,Yes,71,0,0,??,2,0.18.0
-[monero.town](https://monero.town),Yes,Yes,Yes,Yes,Yes,56,0,0,??,2,0.18.0
-[toast.ooo](https://toast.ooo),Yes,Yes,Yes,Yes,Yes,33,0,0,??,2,0.18.0
-[Lemmy  PussTheCat](https://lemmy.pussthecat.org),Yes,Yes,Yes,Yes,Yes,2,0,0,??,2,0.18.0
+[Beehaw](https://beehaw.org),Yes,No,Yes,Yes,No,1642,410,0,97%,21,0.18.4
+[Blåhaj Lemmy](https://lemmy.blahaj.zone),Yes,Yes,Yes,Yes,No,842,167,0,98%,7,0.18.4-kt.2
+[Reddthat](https://reddthat.com),Yes,Yes,Yes,Yes,No,499,3,0,98%,2,0.18.4
+[monero.town](https://monero.town),Yes,Yes,Yes,Yes,Yes,89,0,0,99%,2,0.18.4
+[iusearchlinux.fyi](https://iusearchlinux.fyi),Yes,Yes,Yes,Yes,Yes,77,1,0,99%,2,0.18.4
+[lemmy.studio](https://lemmy.studio),Yes,Yes,Yes,Yes,Yes,37,4,0,79%,2,0.18.3
+[toast.ooo](https://toast.ooo),Yes,Yes,Yes,Yes,Yes,33,0,0,97%,2,0.18.3
+[Baraza](https://baraza.africa),Yes,Yes,No,Yes,Yes,6,0,0,98%,32,0.18.4
+[Lemmy  PussTheCat](https://lemmy.pussthecat.org),Yes,Yes,Yes,Yes,Yes,2,0,0,100%,2,0.18.4
