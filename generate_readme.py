@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 ################################################################################
 # File:    generate_readme.py
-# Version: 0.4
+# Version: 0.5
 # Purpose: Creates the README.md file for this repo
 # Authors: Michael Altfield <michael@michaelaltfield.net>
 # Created: 2023-06-06
-# Updated: 2023-08-04
+# Updated: 2024-05-06
 ################################################################################
 
 ################################################################################
@@ -74,26 +74,6 @@ This repo was created to help users migrate from reddit to lemmy (a federated re
 Because lemmy is federated (like email), there are many different websites where you can register your new lemmy account. In general, it doesn't matter too much which server you register with. Just like with email, you can interact with users on other servers (eg hotmail, aol, gmail, etc).
 
 However, each server has their own local policies and configurations (for example, some lemmy instances disable the "downvote" button). The table below will help you compare each site to decide where to register your new lemmy account.
-
-### Terms
-
- * Instance = A lemmy instance is a website that runs the lemmy software
- * Community = Each instance has many communities. In reddit, **communities were called subreddits**.
- * NSFW = Not Safe For Work
-
-### Legend
-
- * **NU** "Yes" means that **New Users** can register accounts. "No" means that this instance is not accepting new account registrations at this time.
- * **NC** "Yes" means that you can create a **New Community**. "No" means that only admins can create new communities on this instance.
- * **Fed** "Yes" means that you can interact with other **federated** lemmy instances. "No" means that the instance is partially or fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
- * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed. Note: "Yes" does not mean all NSFW content is allowed. Each instance may block some types of NSFW content, such as pornography. Additionally, you can configure your account to hide NSFW content. 
- * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
- * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
- * **BI** The number of instances that this instance is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
- * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
- * **UT** Percent **UpTime** that the server has been online
- * **MO** Number of **Months Online** since this server was first discovered. Higher is better.
- * **Version** The version of Lemmy this instance is running.
 '''
 
 csv_contents = "Instance,NU,NC,Fed,Adult,↓V,Users,BI,BB,UT,MO,Version\n"
@@ -363,7 +343,28 @@ Don't overthink this. **It doesn't matter which instance you use.** You'll still
 # add the markdown table to the readme's contents
 readme_contents += recommended_markdown_table
 
+# add more info
 readme_contents +=  """
+### Terms
+
+ * Instance = A lemmy instance is a website that runs the lemmy software
+ * Community = Each instance has many communities. In reddit, **communities were called subreddits**.
+ * NSFW = Not Safe For Work
+
+### Legend
+
+ * **NU** "Yes" means that **New Users** can register accounts. "No" means that this instance is not accepting new account registrations at this time.
+ * **NC** "Yes" means that you can create a **New Community**. "No" means that only admins can create new communities on this instance.
+ * **Fed** "Yes" means that you can interact with other **federated** lemmy instances. "No" means that the instance is partially or fully siloed (you can only subscribe to communities on this one instance or other instances that are explicitly added to an allowlist)
+ * **Adult** "Yes" means there's no **profanity filters** or blocking of **NSFW** content. "No" means that there are profanity filters or NSFW content is not allowed. Note: "Yes" does not mean all NSFW content is allowed. Each instance may block some types of NSFW content, such as pornography. Additionally, you can configure your account to hide NSFW content. 
+ * **↓V** "Yes" means this instance **allows downvotes**. "No" means this instance has turned-off downvote functionality.
+ * **Users** The **number of users** that have been active on this instance **this month**. If there's too few users, the admin may shutdown the instance. If there's too many users, the instance may go offline due to load. Pick something in-between.
+ * **BI** The number of instances that this instance is completely **BlockIng**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
+ * **BB** The number of instances that this instances is completely **Blocked By**. If this number is high, then users on this instance will be limited in what they can see on the lemmyverse.
+ * **UT** Percent **UpTime** that the server has been online
+ * **MO** Number of **Months Online** since this server was first discovered. Higher is better.
+ * **Version** The version of Lemmy this instance is running.
+
 # What's next?
 
 ## Subscribe to ~~Subreddits~~ Communities
